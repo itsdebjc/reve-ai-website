@@ -1,80 +1,10 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Nav from "@/components/site/Nav";
 import FinalCTA from "@/components/site/FinalCTA";
 import Footer from "@/components/site/Footer";
 import heroImg from "@/assets/hero-cherry-blossom.jpg";
-
-import post1 from "@/assets/learning/post-1.jpg";
-import post2 from "@/assets/learning/post-2.jpg";
-import post3 from "@/assets/learning/post-3.jpg";
-import post4 from "@/assets/learning/post-4.jpg";
-import post5 from "@/assets/learning/post-5.jpg";
-import post6 from "@/assets/learning/post-6.jpg";
-
-type Post = {
-  image: string;
-  category: string;
-  title: string;
-  excerpt: string;
-  readTime: string;
-};
-
-const featured: Post = {
-  image: post1,
-  category: "Featured · AI Foundations",
-  title:
-    "The Brand Intelligence Foundation: Why Most Teams Use AI Without It",
-  excerpt:
-    "AI without a brand foundation produces output that looks right and still needs fixing. Here's what to put underneath the tools so the output actually sounds like your team.",
-  readTime: "8 min read",
-};
-
-const posts: Post[] = [
-  {
-    image: post2,
-    category: "Workflows",
-    title:
-      "Turning Client Conversations Into Content (Without Sounding Like a Robot)",
-    excerpt:
-      "Most teams already have the thinking. They just don't have a system to capture it. A simple workflow for turning calls into thought leadership.",
-    readTime: "6 min read",
-  },
-  {
-    image: post3,
-    category: "Strategy",
-    title: "AI Won't Fix Your Marketing. A System Will.",
-    excerpt:
-      "The teams getting real value from AI are the ones who built the structure first. Here's why the tool is the smallest part of the equation.",
-    readTime: "5 min read",
-  },
-  {
-    image: post4,
-    category: "Voice & Tone",
-    title:
-      "Why Your AI Output Sounds Generic (And the One Input That Fixes It)",
-    excerpt:
-      "Better prompts won't save you. A documented voice will. How to build the voice layer your team can plug into any tool.",
-    readTime: "7 min read",
-  },
-  {
-    image: post5,
-    category: "Team Enablement",
-    title:
-      "The Real Reason Your Team Isn't Using AI (And What to Do About It)",
-    excerpt:
-      "It's not the tools. It's not the training. It's the lack of a shared system. A look at what actually drives adoption inside expert-led teams.",
-    readTime: "6 min read",
-  },
-  {
-    image: post6,
-    category: "Proposals",
-    title:
-      "Cutting Proposal Time by 60%: Inside an Advisory Firm's AI Workflow",
-    excerpt:
-      "How one firm rebuilt its proposal process around a brand intelligence layer — and stopped writing the same thing five different ways.",
-    readTime: "9 min read",
-  },
-];
+import { featuredPost as featured, posts } from "@/data/learningPosts";
 
 const Learning = () => {
   useEffect(() => {
@@ -131,8 +61,8 @@ const Learning = () => {
       {/* FEATURED POST */}
       <section className="py-24 md:py-32 border-b border-hairline">
         <div className="mx-auto max-w-6xl px-6">
-          <a
-            href="#"
+          <Link
+            to={`/learning/${featured.slug}`}
             className="grid md:grid-cols-2 gap-10 md:gap-16 group items-center"
           >
             <div className="aspect-[4/3] overflow-hidden border border-hairline">
@@ -162,7 +92,7 @@ const Learning = () => {
                 </span>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -178,7 +108,11 @@ const Learning = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
             {posts.map((p) => (
-              <a key={p.title} href="#" className="group block">
+              <Link
+                key={p.slug}
+                to={`/learning/${p.slug}`}
+                className="group block"
+              >
                 <div className="aspect-[4/3] overflow-hidden border border-hairline mb-6">
                   <img
                     src={p.image}
@@ -204,7 +138,7 @@ const Learning = () => {
                     {p.readTime}
                   </span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
