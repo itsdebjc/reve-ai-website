@@ -61,7 +61,7 @@ const Footer = () => {
                 <Linkedin size={18} strokeWidth={1.75} />
               </a>
               <a
-                href="https://www.tiktok.com/@reve.ai"
+                href="https://www.tiktok.com/@itsdigitaldeb"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
