@@ -52,7 +52,7 @@ const Footer = () => {
               <a href="#cta" className="hover:text-primary transition-colors">Contact</a>
               <a href="#" className="hover:text-primary transition-colors">Privacy</a>
               <a
-                href="https://www.linkedin.com/in/debbiecollins/"
+                href="https://www.linkedin.com/in/debbiejcollins/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
