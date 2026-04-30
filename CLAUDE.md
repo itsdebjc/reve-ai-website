@@ -56,6 +56,102 @@ All colors use Tailwind's HSL variable system — update in `/src/index.css` roo
 - `.display-italic` — Italic serif accent text
 - `.hairline` — Thin divider line
 
+## SEO Optimization
+
+### Meta Tags (Title & Description)
+Every page should have a unique title and meta description. Example from Services page:
+
+```typescript
+useEffect(() => {
+  document.title = "Services — Reve AI";
+  const desc = "A custom AI system built for your business, or a focused session to show you exactly where to start.";
+  let meta = document.querySelector('meta[name="description"]');
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.setAttribute("name", "description");
+    document.head.appendChild(meta);
+  }
+  meta.setAttribute("content", desc);
+}, []);
+```
+
+**Pattern:** Add this `useEffect` to every page file (`/src/pages/*.tsx`)
+
+### Open Graph Tags (Social Sharing)
+Add to `index.html` `<head>` for social media previews:
+
+```html
+<meta property="og:title" content="Reve AI — Custom AI Systems for Your Business">
+<meta property="og:description" content="Build AI systems tailored to your business with expert guidance and team training.">
+<meta property="og:image" content="/reve-ai-logo-light.png">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reve AI">
+<meta name="twitter:description" content="Custom AI Systems for Your Business">
+```
+
+### Sitemap (for Search Engines)
+Create `/public/sitemap.xml`:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/services</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/case-studies</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourdomain.com/learning</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+```
+
+### Robots.txt (Crawler Control)
+Create `/public/robots.txt`:
+```
+User-agent: *
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
+```
+
+### SEO Checklist
+- ✅ Page titles (unique per page)
+- ✅ Meta descriptions (160 chars max, all pages have them)
+- ✅ Open Graph tags (added to index.html for social sharing)
+- ✅ Sitemap (created `/public/sitemap.xml`)
+- ✅ Robots.txt (updated `/public/robots.txt` with sitemap reference)
+- ✅ Mobile responsive (built-in)
+- ✅ Fast loading (Vite optimized)
+- ⏳ Schema markup (optional, for rich snippets)
+
+**Completed (2026-04-30):**
+- Updated `index.html` Open Graph URL and added og:image reference
+- Created `public/sitemap.xml` with all 4 main pages
+- Updated `public/robots.txt` with sitemap URL
+
+**Next Steps (optional enhancements):**
+1. Once live domain is active, update Open Graph URL in `index.html` from placeholder to actual domain
+2. Add schema markup for rich snippets (optional but improves search appearance)
+3. Submit sitemap to Google Search Console once site is live
+
+---
+
 ## Common Changes
 
 ### Updating Services Page (`/src/pages/Services.tsx`)

@@ -1,22 +1,29 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import fs from 'fs'
+import path from 'path'
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
-  },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
-    dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
   },
-}));
+  plugins: [
+    react(),
+    {
+      name: 'copy-redirects',
+      generateBundle() {
+        const redirectsPath = path.resolve(__dirname, 'public/_redirects')
+        if (fs.existsSync(redirectsPath)) {
+          const content = fs.readFileSync(redirectsPath, 'utf-8')
+          this.emitFile({
+            type: 'asset',
+            fileName: '_redirects',
+            source: content,
+          })
+        }
+      },
+    },
+  ],
+})

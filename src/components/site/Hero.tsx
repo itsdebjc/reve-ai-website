@@ -25,7 +25,7 @@ const Hero = () => {
         </h1>
 
         <p className="mt-8 text-foreground/75 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          AI should be changing how your business runs. If it isn't, the setup isn't right. We build the right one.
+          AI should make your business easier to run. We help you set it up that way.
         </p>
 
         <a
