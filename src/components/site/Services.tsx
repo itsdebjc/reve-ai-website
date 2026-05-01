@@ -3,21 +3,22 @@ import { DoodleAccent } from "./Doodles";
 const services = [
   {
     n: "01",
-    title: "The AI Build",
-    italic: "We build your AI system, then train your team to run it.",
-    body: "A custom build for founder-led service businesses. We capture how your business thinks, build the workflows your team uses every day, and train your people to run it without you.",
+    title: "The AI Setup",
+    italic: "Move faster. Stronger output. Everything stays consistent.",
+    body: "We build the workflows, align your team, and make sure everything works together. So you move faster, output quality improves, and nothing falls through the cracks.",
     bullets: [
-      "You are experimenting with AI but getting inconsistent results",
-      "You want a system your team can run without you in the middle",
-      "You are ready to turn experimentation into something that actually runs",
+      "You're using AI but you're not sure if you're using it right",
+      "You have the tools (Claude, ChatGPT, Slack, email, Shopify, Klaviyo) but they're not working together as a system",
+      "Everyone on your team is working differently with AI",
+      "You're spending more time fixing outputs than actually creating",
     ],
     cta: "Learn More",
   },
   {
     n: "02",
     title: "AI Strategy Session",
-    italic: "A 90-minute working session that shows you exactly where to start.",
-    body: "Before you build anything, get clarity. We look at your business, your team and how you work — then tell you where AI belongs, what to stop doing manually and what your first three workflows should be.",
+    italic: "Get clear on where to start.",
+    body: "Before you build anything, get clarity. We look at your business, your team and how you work, then show you exactly where AI belongs, what to stop doing manually, and what your first three workflows should be.",
     bullets: [
       "Where AI fits in your business and where it does not",
       "A list of what to stop doing manually right now",
