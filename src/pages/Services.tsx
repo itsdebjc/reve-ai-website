@@ -27,10 +27,9 @@ const includedItems = [
 ];
 
 const buildBullets = [
-  "You're using AI but you're not sure if you're using it right",
-  "You have the tools (Claude, ChatGPT, Slack, email, Shopify, Klaviyo) but they're not working together as a system",
-  "Everyone on your team is working differently with AI",
-  "You're spending more time fixing outputs than actually creating",
+  "You are experimenting with AI but getting inconsistent results",
+  "You want a system your team can run without you in the middle",
+  "You are ready to turn experimentation into something that actually runs",
 ];
 
 const sessionOutcomes = [
@@ -72,10 +71,11 @@ const Services = () => {
         <div className="mx-auto max-w-5xl px-6 text-center">
           <p className="label-eyebrow mb-6">— Services</p>
           <h1 className="display-serif text-5xl md:text-7xl mb-8">
-            AI tools are everywhere. <span className="display-italic">Setups are rare.</span>
+            Two ways to <span className="display-italic">work together.</span>
           </h1>
           <p className="text-foreground/75 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Most founders have AI tools. Almost none have the system behind them. Without clear workflows, team alignment, and consistency, output quality suffers. You spend as much time fixing AI drafts as you would writing them. And your token bill keeps climbing. The fix is a custom system built around your business.
+            A custom AI system built for your business, or a focused session to
+            show you exactly where to start.
           </p>
         </div>
       </section>
@@ -90,14 +90,16 @@ const Services = () => {
               SERVICE 01 · CUSTOM BUILD · TEAM TRAINING
             </p>
             <h2 className="display-serif text-4xl md:text-5xl mb-6">
-              The <span className="display-italic">AI Setup</span>
+              The <span className="display-italic">AI Build</span>
             </h2>
             <p className="font-serif font-semibold italic text-primary text-xl md:text-2xl leading-snug mb-8">
-              Move faster. Stronger output. Everything stays consistent.
+              We build your AI system, then train your team to run it.
             </p>
             <div className="hairline w-12 mb-8" />
             <p className="text-foreground/75 leading-relaxed text-base md:text-lg">
-              We build the workflows, align your team, and make sure everything works together. So you move faster, output quality improves, and nothing falls through the cracks.
+              A custom build for founder-led service businesses. We capture
+              how your business thinks, build the workflows your team uses
+              every day, and train your people to run it without you.
             </p>
           </div>
 
@@ -157,7 +159,7 @@ const Services = () => {
               AI <span className="display-italic">Strategy Session</span>
             </h2>
             <p className="font-serif font-semibold italic text-primary text-xl md:text-2xl leading-snug mb-8">
-              Get clear on where to start.
+              A 90-minute working session that shows you exactly where to start.
             </p>
             <div className="hairline w-12 mb-8" />
             <p className="text-foreground/75 leading-relaxed text-base md:text-lg">
