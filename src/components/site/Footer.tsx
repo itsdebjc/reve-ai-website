@@ -38,7 +38,7 @@ const Footer = () => {
         <div className="border-t border-hairline pt-10 label-mono">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-foreground/55 text-center md:text-left">
-              © 2026 REVE AI · BUILT BY REVE AI AGENCY
+              Built with AI by Reve
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
               <a href="#cta" className="hover:text-primary transition-colors">Contact</a>
