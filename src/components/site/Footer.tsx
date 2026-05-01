@@ -35,16 +35,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="border-t border-hairline pt-10 space-y-8 label-mono">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            <a href="/" className="hover:text-primary transition-colors">Home</a>
-            <a href="/services" className="hover:text-primary transition-colors">Services</a>
-            <a href="/learning" className="hover:text-primary transition-colors">Learning</a>
-            <a href="/case-studies" className="hover:text-primary transition-colors">Case Studies</a>
-            <a href="/#about" className="hover:text-primary transition-colors">About</a>
-          </div>
-
-          <div className="border-t border-hairline pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="border-t border-hairline pt-10 label-mono">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-foreground/55 text-center md:text-left">
               © 2026 REVE AI · BUILT BY REVE AI AGENCY
             </p>
