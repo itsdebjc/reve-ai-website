@@ -13,7 +13,7 @@ const includedItems = [
     body: "Your voice, positioning and content rules captured and ready to use.",
   },
   {
-    title: "3 to 5 Custom Workflows",
+    title: "4 Custom Workflows",
     body: "Built around the work that matters most to your team.",
   },
   {
@@ -21,15 +21,16 @@ const includedItems = [
     body: "Working environment configured from day one so the system runs cleanly.",
   },
   {
-    title: "Team Training",
-    body: "Inside the real system, using real work, so your team can run it with confidence.",
+    title: "Training",
+    body: "Inside the real system, using real work, so you and your team can run it with confidence.",
   },
 ];
 
 const buildBullets = [
-  "You are experimenting with AI but getting inconsistent results",
-  "You want a system your team can run without you in the middle",
-  "You are ready to turn experimentation into something that actually runs",
+  "You're using AI but you're not sure if you're using it right",
+  "You have the tools (Claude, ChatGPT, Slack, email, Shopify, Klaviyo) but they're not working together as a system",
+  "Everyone on your team is working differently with AI",
+  "You're spending more time fixing outputs than actually creating",
 ];
 
 const sessionOutcomes = [
@@ -73,9 +74,11 @@ const Services = () => {
           <h1 className="display-serif text-5xl md:text-7xl mb-8">
             Two ways to <span className="display-italic">work together.</span>
           </h1>
+          <p className="display-serif italic text-primary text-2xl md:text-3xl leading-snug mb-8">
+            AI tools are everywhere. Setups are rare.
+          </p>
           <p className="text-foreground/75 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            A custom AI system built for your business, or a focused session to
-            show you exactly where to start.
+            Most have the tools. Few have the system. Without workflows and alignment, you spend as much time fixing AI outputs as creating them.
           </p>
         </div>
       </section>
@@ -87,19 +90,17 @@ const Services = () => {
             <div className="absolute top-8 right-8 text-7xl font-bold text-foreground/10">01</div>
 
             <p className="label-mono text-primary/70 mb-4 inline-block border border-primary/30 px-3 py-1 text-xs">
-              SERVICE 01 · CUSTOM BUILD · TEAM TRAINING
+              SERVICE 01 · AI SETUP · CUSTOM WORKFLOWS
             </p>
             <h2 className="display-serif text-4xl md:text-5xl mb-6">
-              The <span className="display-italic">AI Build</span>
+              The <span className="display-italic">AI Setup</span>
             </h2>
             <p className="font-serif font-semibold italic text-primary text-xl md:text-2xl leading-snug mb-8">
-              We build your AI system, then train your team to run it.
+              Move faster. Stronger output. Everything stays consistent.
             </p>
             <div className="hairline w-12 mb-8" />
             <p className="text-foreground/75 leading-relaxed text-base md:text-lg">
-              A custom build for founder-led service businesses. We capture
-              how your business thinks, build the workflows your team uses
-              every day, and train your people to run it without you.
+              We build the workflows, align your team, and make sure everything works together. So you move faster, output quality improves, and nothing falls through the cracks.
             </p>
           </div>
 
@@ -159,14 +160,11 @@ const Services = () => {
               AI <span className="display-italic">Strategy Session</span>
             </h2>
             <p className="font-serif font-semibold italic text-primary text-xl md:text-2xl leading-snug mb-8">
-              A 90-minute working session that shows you exactly where to start.
+              Get clear on where to start.
             </p>
             <div className="hairline w-12 mb-8" />
             <p className="text-foreground/75 leading-relaxed text-base md:text-lg">
-              Before you build anything, get clarity. We look at your
-              business, your team and how you work — then tell you where AI
-              belongs, what to stop doing manually and what your first three
-              workflows should be.
+              Before you build anything, get clarity. We look at your business, your team and how you work, then show you exactly where AI belongs, what to stop doing manually, and what your first three workflows should be.
             </p>
           </div>
 
