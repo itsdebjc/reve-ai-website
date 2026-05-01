@@ -29,9 +29,9 @@ const Footer = () => {
 
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-24">
-          <p className="font-serif italic text-xl md:text-2xl text-foreground">
-            your thinking <span className="text-primary">→</span> your system{" "}
-            <span className="text-primary">→</span> your team
+          <p className="font-serif italic text-3xl md:text-5xl text-foreground">
+            Thinking <span className="text-primary">→</span> systems{" "}
+            <span className="text-primary">→</span> marketing
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
           <div className="border-t border-hairline pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-foreground/55 text-center md:text-left">
-              © 2026 Reve AI · Beautiful British Columbia · Built by Reve AI Agency
+              © 2026 REVE AI · BUILT BY REVE AI AGENCY
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
               <a href="#cta" className="hover:text-primary transition-colors">Contact</a>
