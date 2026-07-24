@@ -626,7 +626,11 @@ const BFFWellnessApp = () => {
             <TuniWordmark size={22} />
             <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.13em", textTransform: "uppercase", color: "rgba(255,247,241,0.45)" }}>Feedback for midlife women</span>
           </div>
-          <div style={{ fontSize: "12px", lineHeight: 1.6, color: "rgba(255,247,241,0.45)", maxWidth: "560px", textAlign: "right" }}>For general wellness and education only. Not medical advice, diagnosis or treatment. Personal results shared are not a promise of your results. © 2026 Tuni.</div>
+          <div style={{ fontSize: "12px", lineHeight: 1.6, color: "rgba(255,247,241,0.45)", maxWidth: "560px", textAlign: "right" }}>
+            For general wellness and education only. Not medical advice, diagnosis or treatment. Personal results shared are not a promise of your results. © 2026 Tuni.
+            <br />
+            <a href="mailto:hi@itstuni.com" style={{ color: "rgba(255,247,241,0.6)", textDecoration: "none" }}>hi@itstuni.com</a>
+          </div>
         </div>
       </footer>
     </main>
