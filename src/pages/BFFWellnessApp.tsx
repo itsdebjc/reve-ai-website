@@ -20,7 +20,7 @@ const BFF_COLORS = {
   green: "#2FB67A",
 };
 
-const HeartGradient = ({ size = 26 }: { size?: number }) => (
+const HeartGradient = ({ size = 26, color }: { size?: number; color?: string }) => (
   <svg width={size} height={size} viewBox="0 0 120 120">
     <defs>
       <linearGradient id="bffGrad" x1="0" y1="0" x2="1" y2="1">
@@ -30,7 +30,7 @@ const HeartGradient = ({ size = 26 }: { size?: number }) => (
     </defs>
     <path
       d="M60 100 C28 79 14 62 14 43 C14 29 25 20 37 20 C49 20 56 28 60 36 C64 28 71 20 83 20 C95 20 106 29 106 43 C106 62 92 79 60 100 Z"
-      fill="url(#bffGrad)"
+      fill={color ?? "url(#bffGrad)"}
     />
   </svg>
 );
@@ -612,7 +612,7 @@ const BFFWellnessApp = () => {
       <section style={{ background: `linear-gradient(150deg, ${BFF_COLORS.coral} 0%, ${BFF_COLORS.pink} 100%)`, padding: "90px 26px", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "rgba(255,255,255,0.2)", color: "#fff", fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "8px 16px", borderRadius: "999px", backdropFilter: "blur(4px)" }}>
-            <HeartGradient size={14} />
+            <HeartGradient size={14} color="#fff" />
             Tuni · Coming soon
           </span>
           <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(38px, 5.5vw, 66px)", lineHeight: 1, letterSpacing: "-0.03em", color: "#fff", margin: "24px 0 0" }}>Ready to stop guessing?</h2>

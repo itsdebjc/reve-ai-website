@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-['Inter'] text-xs text-[#F2E4D8]/50">
           <p>© 2026 REVE</p>
           <a href="/bff-coach" className="hover:text-[#E893AC] transition-colors flex items-center gap-1">
-            <span>❤️</span> BFF Workshop
+            <span>❤️</span> Tuni Workshop
           </a>
         </div>
       </div>
