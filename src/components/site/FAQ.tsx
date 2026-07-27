@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -5,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CALENDLY_URL } from "@/lib/links";
+import { setJsonLd } from "@/lib/seo";
 
 const faqs = [
   {
@@ -30,6 +32,21 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  useEffect(() => {
+    setJsonLd("faq-schema", {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: f.a,
+        },
+      })),
+    });
+  }, []);
+
   return (
     <section className="bg-[#1D2224] py-24 md:py-32 px-6 md:px-16 border-b border-white/10">
       <div className="mx-auto max-w-[1280px]">

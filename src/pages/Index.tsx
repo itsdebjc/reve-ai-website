@@ -10,6 +10,7 @@ import FAQ from "@/components/site/FAQ";
 import FinalCtaSection from "@/components/site/FinalCtaSection";
 import Footer from "@/components/site/Footer";
 import { useEffect } from "react";
+import { setCanonical } from "@/lib/seo";
 
 const Index = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Index = () => {
       m.content = desc;
       document.head.appendChild(m);
     }
+    setCanonical("/");
   }, []);
 
   return (

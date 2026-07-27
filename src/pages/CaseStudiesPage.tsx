@@ -1,6 +1,7 @@
 import Nav from "@/components/site/Nav";
 import Footer from "@/components/site/Footer";
 import { useEffect } from "react";
+import { setCanonical } from "@/lib/seo";
 
 const CASES = [
   {
@@ -39,6 +40,7 @@ const CASES = [
 const CaseStudiesPage = () => {
   useEffect(() => {
     document.title = "Case Studies · Reve";
+    setCanonical("/case-studies");
     document.querySelector('meta[name="description"]')?.setAttribute(
       "content",
       "Real systems, real results. How expert-led teams use AI to do real work, in their voice, on their terms."

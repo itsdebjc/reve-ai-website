@@ -5,6 +5,7 @@ import WhatWeBuild from "@/components/site/WhatWeBuild";
 import FounderCtaBand from "@/components/site/FounderCtaBand";
 import Footer from "@/components/site/Footer";
 import { useEffect } from "react";
+import { setCanonical } from "@/lib/seo";
 
 const Services = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Services = () => {
       m.content = desc;
       document.head.appendChild(m);
     }
+    setCanonical("/services");
   }, []);
 
   return (

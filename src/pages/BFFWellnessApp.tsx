@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { setCanonical } from "@/lib/seo";
 import debbieCollins from "@/assets/debbie-collins.jpeg";
 import debbieBeach from "@/assets/debbie-beach.jpeg";
 import heroCherryBlossom from "@/assets/hero-cherry-blossom.jpg";
@@ -93,6 +94,7 @@ const BFFWellnessApp = () => {
       document.head.appendChild(meta);
     }
     meta.setAttribute("content", desc);
+    setCanonical("/bff-coach");
   }, []);
 
   const [form, setForm] = useState({ name: "", email: "", submitted: false });

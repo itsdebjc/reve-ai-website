@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { allPosts } from "@/data/learningPosts";
 import { useEffect } from "react";
 import { CALENDLY_URL } from "@/lib/links";
+import { setCanonical } from "@/lib/seo";
 
 const Learning = () => {
   useEffect(() => {
     document.title = "Learning · Reve";
+    setCanonical("/learning");
     document.querySelector('meta[name="description"]')?.setAttribute(
       "content",
       "Notes from the studio. Real talk on AI, marketing and building systems that actually work. No hype, no jargon."

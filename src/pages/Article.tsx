@@ -4,6 +4,7 @@ import Nav from "@/components/site/Nav";
 import FinalCtaSection from "@/components/site/FinalCtaSection";
 import Footer from "@/components/site/Footer";
 import { allPosts, getPostBySlug } from "@/data/learningPosts";
+import { setCanonical } from "@/lib/seo";
 
 const Article = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -19,6 +20,7 @@ const Article = () => {
       document.head.appendChild(meta);
     }
     meta.setAttribute("content", post.excerpt);
+    setCanonical(`/learning/${post.slug}`);
     window.scrollTo(0, 0);
   }, [post]);
 

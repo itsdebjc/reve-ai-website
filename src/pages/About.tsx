@@ -3,6 +3,7 @@ import Footer from "@/components/site/Footer";
 import FinalCtaSection from "@/components/site/FinalCtaSection";
 import { useEffect } from "react";
 import debbiePhoto from "@/assets/debbie-collins.jpeg";
+import { setCanonical } from "@/lib/seo";
 
 const About = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const About = () => {
       "content",
       "About Debbie Collins, founder of Reve. 25 years of marketing expertise, two deep in AI."
     );
+    setCanonical("/about");
   }, []);
 
   return (
