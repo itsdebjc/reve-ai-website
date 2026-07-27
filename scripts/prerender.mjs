@@ -84,9 +84,14 @@ async function main() {
       await page.waitForTimeout(150);
       const html = await page.content();
 
-      const outDir = route === "/" ? distDir : path.join(distDir, route);
-      await mkdir(outDir, { recursive: true });
-      await writeFile(path.join(outDir, "index.html"), html);
+      // Flat "<route>.html" files (not "<route>/index.html") so Netlify
+      // serves them directly at the no-trailing-slash URL, matching our
+      // canonical tags and sitemap, instead of 301-redirecting to add a
+      // trailing slash.
+      const outFile =
+        route === "/" ? path.join(distDir, "index.html") : path.join(distDir, `${route}.html`);
+      await mkdir(path.dirname(outFile), { recursive: true });
+      await writeFile(outFile, html);
       console.log(`prerendered ${route}`);
       await page.close();
     }
