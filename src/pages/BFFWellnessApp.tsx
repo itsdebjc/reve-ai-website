@@ -112,7 +112,14 @@ const BFFWellnessApp = () => {
         body: JSON.stringify({
           data: {
             type: "subscription",
-            attributes: { email: form.email, subscribed: "SUBSCRIBED" },
+            attributes: {
+              profile: {
+                data: {
+                  type: "profile",
+                  attributes: { email: form.email, first_name: form.name },
+                },
+              },
+            },
             relationships: { list: { data: { type: "list", id: "QQMm5G" } } },
           },
         }),
