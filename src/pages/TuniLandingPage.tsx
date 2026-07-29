@@ -83,7 +83,7 @@ const TuniWordmark = ({ size = 23 }: { size?: number }) => (
   </div>
 );
 
-const BFFWellnessApp = () => {
+const TuniLandingPage = () => {
   useEffect(() => {
     document.title = "Tuni | Personal Body Feedback for Midlife Women";
     const desc = "Tuni helps women in midlife discover what their own bodies respond to through a simple daily log, weekly feedback and clearer daily choices.";
@@ -651,4 +651,4 @@ const BFFWellnessApp = () => {
   );
 };
 
-export default BFFWellnessApp;
+export default TuniLandingPage;

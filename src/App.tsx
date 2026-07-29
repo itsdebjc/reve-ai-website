@@ -10,7 +10,7 @@ import About from "./pages/About.tsx";
 import CaseStudiesPage from "./pages/CaseStudiesPage.tsx";
 import Learning from "./pages/Learning.tsx";
 import Article from "./pages/Article.tsx";
-import BFFWellnessApp from "./pages/BFFWellnessApp.tsx";
+import TuniLandingPage from "./pages/TuniLandingPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -44,7 +44,7 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudiesPage />} />
           <Route path="/learning" element={<Learning />} />
           <Route path="/learning/:slug" element={<Article />} />
-          <Route path="/bff-coach" element={<BFFWellnessApp />} />
+          <Route path="/bff-coach" element={<TuniLandingPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
