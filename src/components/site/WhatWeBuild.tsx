@@ -81,7 +81,7 @@ const WhatWeBuild = () => {
             target="_blank"
             rel="noopener noreferrer"
             style={{ fontFamily: "'Anton', sans-serif" }}
-            className="inline-flex text-sm bg-[#7ED2F2] text-[#20262A] px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity uppercase"
+            className="inline-flex text-sm bg-[#E893AC] text-[#20262A] px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity uppercase"
           >
             Book a Call →
           </a>

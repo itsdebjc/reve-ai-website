@@ -55,7 +55,7 @@ const HeroNewDesign = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontFamily: "'Anton', sans-serif" }}
-                  className="text-sm bg-[#5FAF95] text-[#20262A] px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity inline-block leading-tight uppercase"
+                  className="text-sm bg-[#E893AC] text-[#20262A] px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity inline-block leading-tight uppercase"
                 >
                   Book a Call
                 </a>

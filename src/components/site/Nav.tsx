@@ -56,7 +56,7 @@ const Nav = () => {
           target="_blank"
           rel="noopener noreferrer"
           style={{ fontFamily: "'Anton', sans-serif" }}
-          className="hidden md:inline-flex text-xs bg-[#5FAF95] text-[#20262A] px-7 py-3 rounded-[10px] hover:opacity-90 transition-opacity leading-none uppercase"
+          className="hidden md:inline-flex text-xs bg-[#E893AC] text-[#20262A] px-7 py-3 rounded-[10px] hover:opacity-90 transition-opacity leading-none uppercase"
         >
           Book a Call
         </a>
@@ -89,7 +89,7 @@ const Nav = () => {
               rel="noopener noreferrer"
               onClick={closeMobileMenu}
               style={{ fontFamily: "'Anton', sans-serif" }}
-              className="text-xs bg-[#5FAF95] text-[#20262A] px-7 py-3 rounded-[10px] text-center hover:opacity-90 transition-opacity uppercase"
+              className="text-xs bg-[#E893AC] text-[#20262A] px-7 py-3 rounded-[10px] text-center hover:opacity-90 transition-opacity uppercase"
             >
               Book a Call
             </a>
