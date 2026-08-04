@@ -1,15 +1,22 @@
 // Visits every real route against the built dist/ output and saves the
 // fully-rendered HTML so crawlers that don't execute JS (search bots, AI
 // crawlers, link-preview bots) get real content instead of an empty shell.
+//
+// Netlify's build container can't launch a normal Chromium download (no
+// root to install the shared libraries headless Chrome needs), so on
+// Netlify we launch @sparticuz/chromium instead - a Chromium build made
+// for exactly this kind of restricted Linux CI/serverless environment.
+// Locally (any other machine) we use the regular playwright-chromium
+// install, since that already works fine on a dev machine.
 import { createServer } from "node:http";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { chromium } from "playwright-chromium";
 
 const root = path.resolve(import.meta.dirname, "..");
 const distDir = path.join(root, "dist");
 const port = 4173;
+const ON_NETLIFY = Boolean(process.env.NETLIFY);
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -67,22 +74,49 @@ const STATIC_ROUTES = [
   "/bff-coach",
 ];
 
+// Returns a { browser, goto(page, url), close() } wrapper so the rest of the
+// script doesn't need to know which engine it's talking to.
+async function launchBrowser() {
+  if (ON_NETLIFY) {
+    const { default: chromium } = await import("@sparticuz/chromium");
+    const puppeteer = await import("puppeteer-core");
+    const browser = await puppeteer.default.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    });
+    return {
+      browser,
+      newPage: () => browser.newPage(),
+      goto: (page, url) => page.goto(url, { waitUntil: "networkidle0" }),
+      content: (page) => page.content(),
+    };
+  }
+
+  const { chromium } = await import("playwright-chromium");
+  const browser = await chromium.launch();
+  return {
+    browser,
+    newPage: () => browser.newPage(),
+    goto: (page, url) => page.goto(url, { waitUntil: "networkidle" }),
+    content: (page) => page.content(),
+  };
+}
+
 async function main() {
   const learningRoutes = getLearningSlugs().map((slug) => `/learning/${slug}`);
   const routes = [...STATIC_ROUTES, ...learningRoutes];
 
   const server = await startServer();
-  const browser = await chromium.launch();
+  const engine = await launchBrowser();
 
   try {
     for (const route of routes) {
-      const page = await browser.newPage();
-      await page.goto(`http://localhost:${port}${route}`, {
-        waitUntil: "networkidle",
-      });
+      const page = await engine.newPage();
+      await engine.goto(page, `http://localhost:${port}${route}`);
       // Give React a moment to finish the title/meta useEffect calls
-      await page.waitForTimeout(150);
-      const html = await page.content();
+      await new Promise((r) => setTimeout(r, 200));
+      const html = await engine.content(page);
 
       // Flat "<route>.html" files (not "<route>/index.html") so Netlify
       // serves them directly at the no-trailing-slash URL, matching our
@@ -96,7 +130,7 @@ async function main() {
       await page.close();
     }
   } finally {
-    await browser.close();
+    await engine.browser.close();
     server.close();
   }
 }
