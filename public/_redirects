@@ -3,4 +3,4 @@ https://www.reveai.ca/*  https://www.wereve.ca/:splat   301!
 
 /ai-body-workshop   /bff-coach   301
 
-/*    /index.html   404
+/*    /index.html   200
