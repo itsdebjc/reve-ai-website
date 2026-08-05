@@ -106,7 +106,7 @@ const TuniLandingPage = () => {
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://a.klaviyo.com/client/subscriptions/?company_id=TPQB4A", {
+      const res = await fetch("https://a.klaviyo.com/client/subscriptions/?company_id=XjEbAU", {
         method: "POST",
         headers: { "Content-Type": "application/json", revision: "2023-12-15" },
         body: JSON.stringify({
@@ -120,7 +120,7 @@ const TuniLandingPage = () => {
                 },
               },
             },
-            relationships: { list: { data: { type: "list", id: "QQMm5G" } } },
+            relationships: { list: { data: { type: "list", id: "WmvKHc" } } },
           },
         }),
       });
