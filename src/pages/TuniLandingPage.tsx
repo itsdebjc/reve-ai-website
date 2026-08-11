@@ -313,7 +313,7 @@ const TuniLandingPage = () => {
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>A simple feedback loop built around your real life.</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "18px", margin: "26px 0 28px" }}>
               {[
-                { step: "Log", desc: "Food, movement, sleep and how you feel." },
+                { step: "Log", desc: "Food, macros, movement and timing." },
                 { step: "Learn", desc: "See possible patterns across your days and weeks." },
                 { step: "Adjust", desc: "Choose one small thing to try." },
                 { step: "Repeat", desc: "Keep what helps. Change what doesn't." }
