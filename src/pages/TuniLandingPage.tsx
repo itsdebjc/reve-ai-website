@@ -467,7 +467,7 @@ const TuniLandingPage = () => {
                   <button style={{ fontSize: "11px", fontWeight: 700, color: "#fff", background: "linear-gradient(135deg, #0B9EFF, #0B7FFF)", border: "none", padding: "8px 14px", borderRadius: "999px", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Start</button>
                   <button style={{ fontSize: "11px", fontWeight: 700, color: "#fff", background: "linear-gradient(135deg, #0B9EFF, #0B7FFF)", border: "none", padding: "8px 14px", borderRadius: "999px", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Tell me more</button>
                 </div>
-                <div style={{ display: "flex", gap: "6px", width: "100%", maxWidth: "180px", paddingTop: "11px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
+                <div style={{ display: "flex", gap: "6px", width: "100%", maxWidth: "200px", paddingTop: "11px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
                   <input type="text" placeholder="Type your answer..." style={{ flex: 1, fontSize: "11px", color: TUNI_COLORS.ink, padding: "7px 10px", border: "1px solid rgba(42,33,28,0.1)", borderRadius: "999px", outline: "none", background: "#fff", fontFamily: "'Plus Jakarta Sans', sans-serif" }} disabled />
                   <button style={{ fontSize: "10px", fontWeight: 700, color: "#fff", background: "linear-gradient(135deg, #FF6A4D, #F0508C)", border: "none", padding: "7px 10px", borderRadius: "999px", cursor: "pointer", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Send</button>
                 </div>
