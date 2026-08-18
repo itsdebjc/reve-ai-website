@@ -454,7 +454,7 @@ const TuniLandingPage = () => {
           <div className="bff-hide-mobile" style={{ position: "relative", justifySelf: "center", width: "100%", maxWidth: "560px", height: "480px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "center", gap: "20px" }}>
             {/* Onboarding phone */}
             <div style={{ position: "relative", width: "220px", height: "450px", background: "#0A0A0A", borderRadius: "36px", border: "10px solid #0A0A0A", boxShadow: "0 20px 50px rgba(0,0,0,0.25)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
-              <div style={{ flex: 1, background: "#FAF7F3", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "32px 16px 16px", position: "relative", overflow: "hidden" }}>
+              <div style={{ flex: 1, background: "#FEFDFB", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "32px 16px 16px", position: "relative", overflow: "hidden" }}>
                 <div style={{ position: "absolute", top: "11px", right: "12px", fontSize: "8px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: TUNI_COLORS["body-text"] }}>Onboarding</div>
                 <div style={{ marginBottom: "16px", display: "flex", justifyContent: "center" }}>
                   <RadiantHeart size={44} />
