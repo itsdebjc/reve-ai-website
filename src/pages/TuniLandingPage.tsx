@@ -286,6 +286,7 @@ const TuniLandingPage = () => {
               <span style={{ display: "inline-flex", alignItems: "center", gap: "7px", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>For women in perimenopause + menopause</span>
             </div>
             <h1 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(44px, 6vw, 76px)", lineHeight: 0.98, letterSpacing: "-0.035em", margin: 0, color: TUNI_COLORS.ink }}>Your body changed.</h1>
+            <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 700, fontSize: "clamp(32px, 4.4vw, 48px)", lineHeight: 1, color: TUNI_COLORS.pink, marginTop: "6px" }}>Nobody gave you the new instructions.</div>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "22px 0 0" }}>You hit your 40s or 50s, and suddenly the things that used to work don't. You eat pretty well. You move. You try to make good choices.</p>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>And still, you're left wondering:</p>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(26px, 3.4vw, 38px)", lineHeight: 1.15, letterSpacing: "-0.02em", color: TUNI_COLORS.ink, marginTop: "6px" }}>What is actually working for me now?</div>
@@ -297,7 +298,7 @@ const TuniLandingPage = () => {
           <div style={{ display: "flex", justifyContent: "center", position: "relative" }}>
             <img src={debbieCreamBg} alt="Debbie Collins" style={{ width: "100%", maxWidth: "400px", height: "480px", objectFit: "cover", objectPosition: "right center", borderRadius: "26px", boxShadow: "0 28px 60px rgba(42,33,28,0.18)" }} />
             <div style={{ position: "absolute", left: "-18px", bottom: "-22px", background: "#fff", borderRadius: "16px", padding: "13px 17px", boxShadow: "0 16px 34px rgba(42,33,28,0.16)", maxWidth: "228px" }}>
-              <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "21px", lineHeight: 1.15, color: TUNI_COLORS.ink }}>I built Tuni because I was doing all the right things and still had no idea what was actually working.</div>
+              <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "21px", lineHeight: 1.15, color: TUNI_COLORS.ink }}>I built Tuni because I was doing all the right things, and I was still gaining weight.</div>
             </div>
           </div>
         </div>
