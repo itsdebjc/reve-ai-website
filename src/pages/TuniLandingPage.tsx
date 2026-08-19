@@ -3,7 +3,7 @@ import { setCanonical } from "@/lib/seo";
 import debbieBeach from "@/assets/debbie-beach.jpeg";
 import heroCherryBlossom from "@/assets/hero-cherry-blossom.jpg";
 import debbieCreamBg from "@/assets/debbie-collins-cream-bg.jpg";
-import tuniProgressScreen from "@/assets/tuni-progress-screen.png";
+import tuniAppCoach from "@/assets/tuni-app-coach.jpeg";
 
 const TUNI_COLORS = {
   cream: "#FFF7F1",
@@ -271,7 +271,7 @@ export default function TuniLandingPage() {
           {/* iPhone mockup with progress screen */}
           <div style={{ justifySelf: "center", width: "341px", height: "742px", background: "#0A0A0A", borderRadius: "44px", border: "12px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
             {/* Phone screen */}
-            <img src={tuniProgressScreen} alt="Tuni Progress Screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={tuniAppCoach} alt="Tuni Coach Screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
         </div>
       </section>
