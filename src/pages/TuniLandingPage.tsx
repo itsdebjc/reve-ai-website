@@ -318,6 +318,15 @@ const TuniLandingPage = () => {
         </div>
       </section>
 
+      {/* BODY INTELLIGENCE STATEMENT */}
+      <section style={{ background: TUNI_COLORS["cream-pink"], padding: "72px 26px", textAlign: "center" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Body intelligence</span>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Tuni helps midlife women discover what their own body responds to through a simple daily log and weekly feedback.</h2>
+          <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "clamp(26px, 3.2vw, 36px)", lineHeight: 1.2, color: TUNI_COLORS.pink, marginTop: "16px" }}>Tune in to your body's intelligence.</div>
+        </div>
+      </section>
+
       {/* THE PROBLEM */}
       <section style={{ background: TUNI_COLORS.ink, color: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "920px", margin: "0 auto" }}>
@@ -620,6 +629,32 @@ const TuniLandingPage = () => {
         </div>
       </section>
 
+      {/* MINDSET */}
+      <section style={{ position: "relative", overflow: "hidden", background: TUNI_COLORS.ink, color: TUNI_COLORS.cream, padding: "96px 26px" }}>
+        <div style={{ position: "absolute", inset: "0", background: "radial-gradient(ellipse 62% 72% at 50% 36%, rgba(240,80,140,0.22), rgba(255,124,77,0.07) 46%, transparent 72%)", pointerEvents: "none" }} />
+        {[
+          { top: "66px", left: "13%", size: "8px", color: TUNI_COLORS.amber, opacity: 0.75 },
+          { top: "128px", right: "15%", size: "6px", color: TUNI_COLORS.pink, opacity: 0.75 },
+          { bottom: "90px", left: "21%", size: "5px", color: TUNI_COLORS.coral, opacity: 0.6 },
+          { bottom: "128px", right: "23%", size: "7px", color: TUNI_COLORS.amber, opacity: 0.6 },
+        ].map((dot, i) => (
+          <div key={`mindset-dot-${i}`} style={{ position: "absolute", ...dot, borderRadius: "50%", background: dot.color, opacity: dot.opacity }} />
+        ))}
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "740px", margin: "0 auto", textAlign: "center" }}>
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
+            <RadiantHeart size={64} />
+          </div>
+          <span style={{ display: "inline-flex", alignItems: "center", background: "rgba(255,247,241,0.08)", color: TUNI_COLORS.amber, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A better way</span>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.6vw, 54px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "20px 0 0", color: TUNI_COLORS.cream }}>You do not need to be perfect. You need a better way to pay attention.</h2>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "24px auto 0", maxWidth: "600px" }}>Tuni is not here to judge your lunch or tell you one meal ruined everything. <span style={{ color: "rgba(255,247,241,0.95)", fontWeight: 600 }}>It is here to help you notice patterns.</span></p>
+          <div style={{ margin: "22px auto 0", maxWidth: "600px" }}>
+            <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "0" }}>One note can reveal something useful.</p>
+            <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "12px 0 0" }}>One pause can change the next choice.</p>
+          </div>
+          <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(19px, 2.8vw, 26px)", lineHeight: 1.16, margin: "30px auto 0", maxWidth: "660px" }}>This is not about being strict. It is about staying close enough to your habits that you can actually learn from them.</p>
+        </div>
+      </section>
+
       {/* WHO IT'S FOR */}
       <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
@@ -646,6 +681,28 @@ const TuniLandingPage = () => {
         <p style={{ fontSize: "13px", lineHeight: 1.5, color: TUNI_COLORS["muted-gray"], textAlign: "center", maxWidth: "980px", margin: "20px auto 0" }}>Tuni is for general wellness and education only. It is not medical advice, diagnosis or treatment.</p>
         <div style={{ textAlign: "center", marginTop: "30px" }}>
           <button onClick={() => document.getElementById("workshop-form")?.scrollIntoView({ behavior: "smooth", block: "center" })} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 6px 16px rgba(240,80,140,0.22)", border: "none", cursor: "pointer" }}>Join a live Tuni workshop →</button>
+        </div>
+      </section>
+
+      {/* WHAT'S INCLUDED */}
+      <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
+          <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42,33,28,0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>What's included</span>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.06, letterSpacing: "-0.02em", margin: "22px 0 0" }}>What you'll get</h2>
+          <div className="bff-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", margin: "34px 0 26px" }}>
+            {[
+              { title: "Live Tuni workshop", desc: "A guided session that starts with why I built Tuni, then shows you how to use it in real life." },
+              { title: "The story behind Tuni", desc: "What I learned from my own experience and why another plan was not the answer." },
+              { title: "Tuni setup", desc: "Choose your starting point and set up a simple daily logging rhythm." },
+              { title: "Weekly review method", desc: "Look back, spot possible patterns and choose one useful next step." },
+              { title: "Real-life examples", desc: "See how Tuni fits meals, restaurants, weekends, busy days and \"I feel off\" moments." },
+            ].map((item) => (
+              <div key={item.title} style={{ background: "#fff", borderRadius: "16px", padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px", boxShadow: "0 6px 16px rgba(42,33,28,0.05)" }}>
+                <span style={{ fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink }}>{item.title}</span>
+                <span style={{ fontSize: "15px", color: TUNI_COLORS["body-text"], lineHeight: 1.45 }}>{item.desc}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
