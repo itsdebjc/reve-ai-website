@@ -323,10 +323,9 @@ export default function TuniLandingPage() {
             <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I would make progress, stall and still have no idea what was actually working.</p>
             <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>The hardest part was not a lack of effort. It was not understanding why my body was responding the way it was.</p>
             <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>So I stopped looking for another plan and started paying closer attention to my own food, habits and body composition data. Each week, I reviewed what had happened, made one small adjustment and learned from the results.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "20px 0 0" }}>For the first time, I felt like I was working with my body instead of guessing.</p>
-            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", letterSpacing: "-0.01em", textTransform: "uppercase", color: TUNI_COLORS.coral, margin: "24px 0 14px" }}>In three months</div>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginBottom: "22px" }}>
-              {[{ label: "7.8 lbs", desc: "lost total" }, { label: "7 lbs", desc: "body fat reduced" }, { label: "32.3% → 25.7%", desc: "body fat lowered" }, { label: "Muscle", desc: "maintained while losing fat" }].map((stat) => (
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "20px 0 0" }}>My numbers finally started moving.</p>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", margin: "20px 0 22px" }}>
+              {[{ label: "10 lb", desc: "lighter" }, { label: "28.1%", desc: "body fat" }, { label: "15.4 lb", desc: "trunk fat" }, { label: "5", desc: "visceral fat" }].map((stat) => (
                 <div key={stat.label} style={{ background: "#fff", borderRadius: "16px", padding: "18px 20px", boxShadow: "0 6px 16px rgba(42,33,28,0.05)" }}>
                   <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "26px", color: TUNI_COLORS.coral }}>{stat.label}</div>
                   <div style={{ fontSize: "13px", color: TUNI_COLORS["body-text"], marginTop: "2px" }}>{stat.desc}</div>
@@ -338,7 +337,7 @@ export default function TuniLandingPage() {
             <div style={{ marginTop: "24px", paddingLeft: "18px", borderLeft: "2px solid rgba(240,80,140,0.3)" }}>
               <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "26px", lineHeight: 1.25, color: TUNI_COLORS.ink }}>At 54, I understand this woman because I am this woman.</div>
             </div>
-            <p style={{ fontSize: "13px", lineHeight: 1.55, color: TUNI_COLORS["muted-gray"], background: TUNI_COLORS.mat, borderRadius: "14px", padding: "16px 18px", margin: "24px 0 0" }}>These are my personal results, not a promise of yours. Your body, habits and results will be different. That's exactly why Tuni is built around learning from your own patterns.</p>
+            <p style={{ fontSize: "13px", lineHeight: 1.55, color: TUNI_COLORS["muted-gray"], background: TUNI_COLORS.mat, borderRadius: "14px", padding: "16px 18px", margin: "24px 0 0", fontWeight: 600 }}>These are my personal results. Every woman's body will respond differently.</p>
           </div>
         </div>
       </section>
