@@ -555,32 +555,6 @@ const TuniLandingPage = () => {
         </div>
       </section>
 
-      {/* MINDSET */}
-      <section style={{ position: "relative", overflow: "hidden", background: TUNI_COLORS.ink, color: TUNI_COLORS.cream, padding: "96px 26px" }}>
-        <div style={{ position: "absolute", inset: "0", background: "radial-gradient(ellipse 62% 72% at 50% 36%, rgba(240,80,140,0.22), rgba(255,124,77,0.07) 46%, transparent 72%)", pointerEvents: "none" }} />
-        {[
-          { top: "66px", left: "13%", size: "8px", color: TUNI_COLORS.amber, opacity: 0.75 },
-          { top: "128px", right: "15%", size: "6px", color: TUNI_COLORS.pink, opacity: 0.75 },
-          { bottom: "90px", left: "21%", size: "5px", color: TUNI_COLORS.coral, opacity: 0.6 },
-          { bottom: "128px", right: "23%", size: "7px", color: TUNI_COLORS.amber, opacity: 0.6 },
-        ].map((dot, i) => (
-          <div key={`mindset-dot-${i}`} style={{ position: "absolute", ...dot, borderRadius: "50%", background: dot.color, opacity: dot.opacity }} />
-        ))}
-        <div style={{ position: "relative", zIndex: 1, maxWidth: "740px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
-            <RadiantHeart size={64} />
-          </div>
-          <span style={{ display: "inline-flex", alignItems: "center", background: "rgba(255,247,241,0.08)", color: TUNI_COLORS.amber, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A better way</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.6vw, 54px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "20px 0 0", color: TUNI_COLORS.cream }}>You do not need to be perfect. You need a better way to pay attention.</h2>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "24px auto 0", maxWidth: "600px" }}>Tuni is not here to judge your lunch or tell you one meal ruined everything. <span style={{ color: "rgba(255,247,241,0.95)", fontWeight: 600 }}>It is here to help you notice patterns.</span></p>
-          <div style={{ margin: "22px auto 0", maxWidth: "600px" }}>
-            <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "0" }}>One note can reveal something useful.</p>
-            <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.74)", margin: "12px 0 0" }}>One pause can change the next choice.</p>
-          </div>
-          <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(19px, 2.8vw, 26px)", lineHeight: 1.16, margin: "30px auto 0", maxWidth: "660px" }}>This is not about being strict. It is about staying close enough to your habits that you can actually learn from them.</p>
-        </div>
-      </section>
-
       {/* WHO IT'S FOR */}
       <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
@@ -647,7 +621,7 @@ const TuniLandingPage = () => {
         <div className="bff-grid-2col" style={{ maxWidth: "1040px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.05fr 0.95fr", gap: "54px", alignItems: "center" }}>
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Choose what works for you</span>
-            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.2vw, 48px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Learn what actually works <span style={{ color: TUNI_COLORS.pink }}>for you.</span></h2>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.2vw, 48px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Join a live Tuni workshop. <span style={{ color: TUNI_COLORS.pink }}>Pick the date that works best for you.</span></h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>I'm starting with small live workshops because I don't want to hand you an app and expect you to figure it out by yourself.</p>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>I'll show you exactly how I use Tuni in real life.</p>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>We'll log meals together. I'll show you how to use restaurant menus, packaged food and everyday meals. And I'll help you get set up so you can start learning from your own information.</p>
