@@ -5,6 +5,7 @@ import debbieBeach from "@/assets/debbie-beach.jpeg";
 import heroCherryBlossom from "@/assets/hero-cherry-blossom.jpg";
 import debbieCreamBg from "@/assets/debbie-collins-cream-bg.jpg";
 import tuniAppToday from "@/assets/tuni-app-today.png";
+import tuniAppCoach from "@/assets/tuni-app-coach.jpeg";
 
 const TUNI_COLORS = {
   cream: "#FFF7F1",
@@ -442,9 +443,14 @@ const TuniLandingPage = () => {
             </div>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.28)", border: "none", cursor: "pointer", marginTop: "28px" }}>Join a live Tuni workshop →</button>
           </div>
-          {/* iPhone mockup with app screen */}
-          <div className="bff-hide-mobile" style={{ justifySelf: "center", width: "300px", height: "652px", background: "#0A0A0A", borderRadius: "44px", border: "12px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
-            <img src={tuniAppToday} alt="Tuni app screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          {/* iPhone mockups with app screens */}
+          <div className="bff-hide-mobile" style={{ justifySelf: "center", position: "sticky", top: "100px", display: "flex", flexDirection: "column", gap: "56px" }}>
+            <div style={{ width: "300px", height: "652px", background: "#0A0A0A", borderRadius: "44px", border: "12px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+              <img src={tuniAppToday} alt="Tuni app screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
+            <div style={{ width: "280px", height: "608px", alignSelf: "flex-end", marginRight: "24px", background: "#0A0A0A", borderRadius: "42px", border: "11px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+              <img src={tuniAppCoach} alt="Tuni coach screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
           </div>
         </div>
       </section>
