@@ -421,19 +421,21 @@ const TuniLandingPage = () => {
               <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "8px" }}>Log. Learn. Adjust. Repeat.</h3>
               <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>The more Tuni learns about your real life and your body, the more useful the feedback becomes.</p>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "18px", margin: "26px 0 28px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "32px 0 28px" }}>
               {[
-                { step: "Log your food", icon: "🍽️", details: "Type it, talk it or snap a photo. Tuni makes it easy to capture what you ate without turning your day into a tracking project." },
-                { step: "Get feedback from your coach", icon: "💬", details: "Tuni looks across your food, movement and patterns to help you understand what may be working and what might be getting in the way." },
-                { step: "Add your body scan", icon: "📊", details: "Upload your weekly body composition scan so you can see what is actually changing, not just what the scale says." },
-                { step: "Eating out? Use Menu Mode", icon: "📋", details: "Upload a menu and Tuni can help you spot choices that fit what you are working on." },
+                { line1: "Log food by", line2: "text or photo.", details: "Food, movement, sleep and how you feel — in a sentence, or a picture of the plate.", tag: "No calorie counting." },
+                { line1: "A coach that reads", line2: "your data.", details: "It answers from what you actually logged, rather than guessing at it.", tag: "Learn from your own patterns." },
+                { line1: "See what's", line2: "actually changing.", details: "Upload your weekly body composition scan so you can see what's changing beneath the surface, not just what the scale says.", tag: "Beyond the scale." },
+                { line1: "Eating out?", line2: "We've got you.", details: "Upload a menu and Tuni helps you spot choices that fit what you're working on.", tag: "Menu Mode." },
               ].map((item, i) => (
-                <div key={item.step} style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "#fff", borderRadius: "16px", padding: "20px 24px", boxShadow: "0 4px 12px rgba(42,33,28,0.05)" }}>
-                  <div style={{ flexShrink: 0, width: "38px", height: "38px", borderRadius: "50%", background: [TUNI_COLORS.coral, TUNI_COLORS.pink, TUNI_COLORS.amber, TUNI_COLORS.green][i], display: "flex", alignItems: "center", justifyContent: "center", fontSize: "17px" }}>{item.icon}</div>
-                  <div>
-                    <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.4, color: TUNI_COLORS.ink, margin: "0 0 6px" }}>{i + 1}. {item.step}</p>
-                    <p style={{ fontSize: "15px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>{item.details}</p>
+                <div key={item.line1}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
+                    <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: TUNI_COLORS.coral, letterSpacing: "0.02em" }}>0{i + 1}</span>
+                    <span style={{ flex: 1, height: "1px", background: "rgba(42,33,28,0.15)", maxWidth: "56px" }} />
                   </div>
+                  <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: TUNI_COLORS.pink }}>{item.line2}</span></h3>
+                  <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], maxWidth: "460px", margin: "14px 0 0" }}>{item.details}</p>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: `${TUNI_COLORS.pink}15`, color: TUNI_COLORS.pink, fontSize: "14px", fontWeight: 700, padding: "8px 16px", borderRadius: "999px", marginTop: "14px" }}>✓ {item.tag}</span>
                 </div>
               ))}
             </div>
