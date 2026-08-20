@@ -414,24 +414,26 @@ const TuniLandingPage = () => {
       <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div className="bff-grid-2col" style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "60px", alignItems: "center" }}>
           <div>
-            <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>How Tuni is different</span>
+            <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Most apps give you a plan. <span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span></h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni helps you connect your everyday choices with what your body is actually doing over time, so you can stop guessing and learn what works for you.</p>
             <div style={{ marginTop: "28px", paddingTop: "24px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "8px" }}>Log. Learn. Adjust. Repeat.</h3>
-              <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>A simple feedback loop built around your real life.</p>
+              <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>The more Tuni learns about your real life and your body, the more useful the feedback becomes.</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "18px", margin: "26px 0 28px" }}>
               {[
-                { step: "Log", desc: "Tell Tuni what your day looked like.", details: "Meals, snacks, movement and timing. Talk it, type it or upload what helps." },
-                { step: "Learn", desc: "See the patterns you'd normally miss.", details: "Tuni looks across your days, weeks and body changes to help you notice what may be helping or getting in the way." },
-                { step: "Adjust", desc: "Try one small change.", details: "Not a whole new plan. Just something worth testing based on what you're seeing." },
-                { step: "Repeat", desc: "See how your body responds.", details: "Keep what works. Change what doesn't. Build a routine that actually fits you." }
-              ].map((item) => (
-                <div key={item.step} style={{ background: "#fff", borderRadius: "16px", padding: "24px", boxShadow: "0 4px 12px rgba(42,33,28,0.05)" }}>
-                  <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "18px", color: TUNI_COLORS.ink, marginBottom: "8px" }}>{item.step}</div>
-                  <p style={{ fontSize: "16px", fontWeight: 600, lineHeight: 1.5, color: TUNI_COLORS.ink, margin: "0 0 8px" }}>{item.desc}</p>
-                  <p style={{ fontSize: "15px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>{item.details}</p>
+                { step: "Log your food", icon: "🍽️", details: "Type it, talk it or snap a photo. Tuni makes it easy to capture what you ate without turning your day into a tracking project." },
+                { step: "Get feedback from your coach", icon: "💬", details: "Tuni looks across your food, movement and patterns to help you understand what may be working and what might be getting in the way." },
+                { step: "Add your body scan", icon: "📊", details: "Upload your weekly body composition scan so you can see what is actually changing, not just what the scale says." },
+                { step: "Eating out? Use Menu Mode", icon: "📋", details: "Upload a menu and Tuni can help you spot choices that fit what you are working on." },
+              ].map((item, i) => (
+                <div key={item.step} style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "#fff", borderRadius: "16px", padding: "20px 24px", boxShadow: "0 4px 12px rgba(42,33,28,0.05)" }}>
+                  <div style={{ flexShrink: 0, width: "38px", height: "38px", borderRadius: "50%", background: [TUNI_COLORS.coral, TUNI_COLORS.pink, TUNI_COLORS.amber, TUNI_COLORS.green][i], display: "flex", alignItems: "center", justifyContent: "center", fontSize: "17px" }}>{item.icon}</div>
+                  <div>
+                    <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.4, color: TUNI_COLORS.ink, margin: "0 0 6px" }}>{i + 1}. {item.step}</p>
+                    <p style={{ fontSize: "15px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>{item.details}</p>
+                  </div>
                 </div>
               ))}
             </div>
