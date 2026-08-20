@@ -443,13 +443,13 @@ const TuniLandingPage = () => {
             </div>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.28)", border: "none", cursor: "pointer", marginTop: "28px" }}>Join a live Tuni workshop →</button>
           </div>
-          {/* iPhone mockups with app screens */}
-          <div className="bff-hide-mobile" style={{ justifySelf: "center", position: "sticky", top: "100px", display: "flex", flexDirection: "column", gap: "56px" }}>
-            <div style={{ width: "300px", height: "652px", background: "#0A0A0A", borderRadius: "44px", border: "12px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
-              <img src={tuniAppToday} alt="Tuni app screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            </div>
-            <div style={{ width: "280px", height: "608px", alignSelf: "flex-end", marginRight: "24px", background: "#0A0A0A", borderRadius: "42px", border: "11px solid #0A0A0A", boxShadow: "0 20px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+          {/* iPhone mockups with app screens, fanned */}
+          <div className="bff-hide-mobile" style={{ justifySelf: "center", position: "sticky", top: "100px", width: "340px", height: "660px" }}>
+            <div style={{ position: "absolute", left: 0, top: "28px", width: "280px", height: "608px", transform: "rotate(-7deg)", transformOrigin: "bottom left", background: "#0A0A0A", borderRadius: "42px", border: "11px solid #0A0A0A", boxShadow: "0 20px 50px rgba(0,0,0,0.25)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
               <img src={tuniAppCoach} alt="Tuni coach screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
+            <div style={{ position: "absolute", right: 0, top: 0, width: "300px", height: "652px", transform: "rotate(6deg)", transformOrigin: "bottom right", background: "#0A0A0A", borderRadius: "44px", border: "12px solid #0A0A0A", boxShadow: "0 24px 60px rgba(0,0,0,0.3)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+              <img src={tuniAppToday} alt="Tuni app screen" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
           </div>
         </div>
