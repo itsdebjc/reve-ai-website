@@ -417,25 +417,21 @@ const TuniLandingPage = () => {
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Most apps give you a plan. <span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span></h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni helps you connect your everyday choices with what your body is actually doing over time, so you can stop guessing and learn what works for you.</p>
-            <div style={{ marginTop: "28px", paddingTop: "24px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
-              <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "8px" }}>Log. Learn. Adjust. Repeat.</h3>
-              <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "0" }}>The more Tuni learns about your real life and your body, the more useful the feedback becomes.</p>
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "32px 0 28px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "36px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
-                { line1: "Log food by", line2: "text or photo.", details: "Food, movement, sleep and how you feel — in a sentence, or a picture of the plate.", tag: "No calorie counting." },
-                { line1: "A coach that reads", line2: "your data.", details: "It answers from what you actually logged, rather than guessing at it.", tag: "Learn from your own patterns." },
-                { line1: "See what's", line2: "actually changing.", details: "Upload your weekly body composition scan so you can see what's changing beneath the surface, not just what the scale says.", tag: "Beyond the scale." },
-                { line1: "Eating out?", line2: "We've got you.", details: "Upload a menu and Tuni helps you spot choices that fit what you're working on.", tag: "Menu Mode." },
+                { line1: "Log food by", line2: "text or photo.", details: "Type it, talk it or snap a photo. Tuni makes it easy to capture what you ate without turning your day into a tracking project.", tag: "No calorie counting.", color: TUNI_COLORS.coral },
+                { line1: "A coach that reads", line2: "your data.", details: "Tuni looks across your food, movement and patterns to help you understand what may be working and what might be getting in the way.", tag: "Learn from your own patterns.", color: TUNI_COLORS.pink },
+                { line1: "See what's", line2: "actually changing.", details: "Upload your weekly body composition scan so you can see what's changing beneath the surface, not just what the scale says.", tag: "Beyond the scale.", color: TUNI_COLORS.amber },
+                { line1: "Eating out?", line2: "We've got you.", details: "Upload a menu and Tuni helps you spot choices that fit what you're working on.", tag: "Menu Mode.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
-                    <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: TUNI_COLORS.coral, letterSpacing: "0.02em" }}>0{i + 1}</span>
+                    <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: item.color, letterSpacing: "0.02em" }}>0{i + 1}</span>
                     <span style={{ flex: 1, height: "1px", background: "rgba(42,33,28,0.15)", maxWidth: "56px" }} />
                   </div>
-                  <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: TUNI_COLORS.pink }}>{item.line2}</span></h3>
+                  <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: item.color }}>{item.line2}</span></h3>
                   <p style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], maxWidth: "460px", margin: "14px 0 0" }}>{item.details}</p>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: `${TUNI_COLORS.pink}15`, color: TUNI_COLORS.pink, fontSize: "14px", fontWeight: 700, padding: "8px 16px", borderRadius: "999px", marginTop: "14px" }}>✓ {item.tag}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: `${item.color}15`, color: item.color, fontSize: "14px", fontWeight: 700, padding: "8px 16px", borderRadius: "999px", marginTop: "14px" }}>✓ {item.tag}</span>
                 </div>
               ))}
             </div>
