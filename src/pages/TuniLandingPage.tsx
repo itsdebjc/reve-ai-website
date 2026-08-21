@@ -460,17 +460,17 @@ const TuniLandingPage = () => {
 
       {/* MARQUEE TICKER */}
       <section style={{ background: TUNI_COLORS.ink, overflow: "hidden", padding: "15px 0" }}>
-        <div style={{ display: "flex", width: "max-content", animation: "bffMarquee 34s linear infinite" }}>
-          {["Talk it", "Type it", "Snap it", "Scan it", "Ask Tuni"].map((text, i) => (
+        <div style={{ display: "flex", width: "max-content", animation: "bffMarquee 24s linear infinite" }}>
+          {Array(6).fill(["Talk it", "Type it", "Snap it", "Scan it", "Ask Tuni"]).flat().map((text, i) => (
             <span key={`${i}-1`} style={{ padding: "0 22px", fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "16px", color: TUNI_COLORS.cream, whiteSpace: "nowrap", display: "flex", alignItems: "center" }}>
               {text}
-              {i < 4 && <span style={{ color: TUNI_COLORS.coral, marginLeft: "22px" }}>•</span>}
+              <span style={{ color: TUNI_COLORS.coral, marginLeft: "22px" }}>•</span>
             </span>
           ))}
-          {["Talk it", "Type it", "Snap it", "Scan it", "Ask Tuni"].map((text, i) => (
+          {Array(6).fill(["Talk it", "Type it", "Snap it", "Scan it", "Ask Tuni"]).flat().map((text, i) => (
             <span key={`${i}-2`} style={{ padding: "0 22px", fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "16px", color: TUNI_COLORS.cream, whiteSpace: "nowrap", display: "flex", alignItems: "center" }} aria-hidden="true">
               {text}
-              {i < 4 && <span style={{ color: TUNI_COLORS.coral, marginLeft: "22px" }}>•</span>}
+              <span style={{ color: TUNI_COLORS.coral, marginLeft: "22px" }}>•</span>
             </span>
           ))}
         </div>
