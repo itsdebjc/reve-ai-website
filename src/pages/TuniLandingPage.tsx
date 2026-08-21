@@ -422,8 +422,8 @@ const TuniLandingPage = () => {
             <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "36px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
                 { line1: "Log your food", line2: "your way.", details: ["Talk it, type it or snap a photo. Tuni makes it easy to capture what you ate without turning your day into a tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
-                { line1: "Meet Tuni, the coach", line2: "that reads your data.", details: ["Tuni looks across your food, movement, timing and body changes to help you understand what may be working and what might be getting in the way.", "Ask Tuni questions, get feedback and learn from your own patterns."], tag: "A coach that knows your data.", color: TUNI_COLORS.pink },
-                { line1: "Scan it.", line2: "See what's actually changing.", details: ["Upload your weekly body composition scan to see what's changing beneath the surface, not just what the scale says.", "See changes in body fat, muscle and more over time."], tag: "Beyond the scale.", color: TUNI_COLORS.amber },
+                { line1: "A coach that", line2: "knows your data.", details: ["Tuni looks across your food, movement, timing and body changes to help you understand what may be working and what might be getting in the way.", "Ask Tuni questions, get feedback and learn from your own patterns."], tag: "A coach that knows your data.", color: TUNI_COLORS.pink },
+                { line1: "See what's", line2: "actually changing.", details: ["Upload your weekly body composition scan to see what's changing beneath the surface, not just what the scale says.", "See changes in body fat, muscle and more over time."], tag: "Beyond the scale.", color: TUNI_COLORS.amber },
                 { line1: "Eating out?", line2: "Snap the menu.", details: ["Upload a menu and Tuni helps you spot choices that fit what you're working on, without making eating out feel complicated."], tag: "Menu Mode.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
