@@ -524,15 +524,15 @@ const TuniLandingPage = () => {
       <section style={{ background: TUNI_COLORS["cream-alt"], padding: "84px 26px" }}>
         <div style={{ maxWidth: "980px", margin: "0 auto", textAlign: "center" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A different way to think about it</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.4vw, 48px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "22px 0 0" }}>The goal is to find yours. <span style={{ color: TUNI_COLORS.pink }}>Not mine. Yours.</span></h2>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0", maxWidth: "560px" }}>What worked for me may not be what works for you. That's the whole point.</p>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.4vw, 48px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "22px 0 0" }}>The goal is to find out <span style={{ color: TUNI_COLORS.pink }}>what works for your body.</span></h2>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0", maxWidth: "560px" }}>Tuni helps you notice your patterns, see how your body is responding and make small adjustments based on what you learn.</p>
 
           <div className="bff-grid-4col" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", margin: "40px 0 0", textAlign: "left" }}>
             {[
-              { label: "Your patterns", desc: "What shows up again and again.", icon: <IconPulse color={TUNI_COLORS.coral} />, color: TUNI_COLORS.coral },
-              { label: "Your body", desc: "How it actually responds.", icon: <IconHeartLine color={TUNI_COLORS.pink} />, color: TUNI_COLORS.pink },
-              { label: "Your choices", desc: "Small, one at a time.", icon: <IconCompass color={TUNI_COLORS.amber} />, color: TUNI_COLORS.amber },
-              { label: "Your feedback", desc: "What Tuni reflects back.", icon: <IconChat color={TUNI_COLORS.green} />, color: TUNI_COLORS.green },
+              { label: "Your patterns", desc: "What keeps showing up.", icon: <IconPulse color={TUNI_COLORS.coral} />, color: TUNI_COLORS.coral },
+              { label: "Your body", desc: "What's actually changing.", icon: <IconHeartLine color={TUNI_COLORS.pink} />, color: TUNI_COLORS.pink },
+              { label: "Your choices", desc: "What you try next.", icon: <IconCompass color={TUNI_COLORS.amber} />, color: TUNI_COLORS.amber },
+              { label: "Your feedback", desc: "What you learn from it.", icon: <IconChat color={TUNI_COLORS.green} />, color: TUNI_COLORS.green },
             ].map((item) => (
               <div key={item.label} style={{ background: "#fff", borderRadius: "18px", padding: "22px 20px", boxShadow: "0 6px 16px rgba(42,33,28,0.05)" }}>
                 <IconBadge color={item.color}>{item.icon}</IconBadge>
@@ -542,7 +542,7 @@ const TuniLandingPage = () => {
             ))}
           </div>
 
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "36px auto 0", maxWidth: "560px" }}>Tuni helps you find what your own body responds to.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "36px auto 0", maxWidth: "560px" }}>Because the goal isn't to follow someone else's plan. It's to figure out what works for you.</p>
         </div>
       </section>
 
