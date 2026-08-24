@@ -309,9 +309,18 @@ const TuniLandingPage = () => {
       {/* BODY INTELLIGENCE STATEMENT */}
       <section style={{ background: TUNI_COLORS["cream-pink"], padding: "72px 26px", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Body intelligence</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Tuni helps midlife women discover what their own body responds to through a simple daily log and weekly feedback.</h2>
-          <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "clamp(26px, 3.2vw, 36px)", lineHeight: 1.2, color: TUNI_COLORS.pink, marginTop: "16px" }}>Tune in to your body's intelligence.</div>
+          <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A different kind of feedback</span>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Most apps tell you what to do. <span style={{ color: TUNI_COLORS.pink }}>Tuni helps you see what's working.</span></h2>
+          <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "560px", margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
+          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: "10px", margin: "32px 0 0" }}>
+            {["What you do", "What changes", "What you learn", "What you adjust"].map((step, i) => (
+              <div key={step} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.ink, fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "15px", padding: "10px 18px", borderRadius: "999px", boxShadow: "0 4px 12px rgba(42,33,28,0.06)" }}>{step}</span>
+                {i < 3 && <span style={{ color: TUNI_COLORS.pink, fontWeight: 700, fontSize: "16px" }}>→</span>}
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: "14px", fontStyle: "italic", color: TUNI_COLORS["muted-gray"], marginTop: "16px" }}>That is the product in one line.</p>
         </div>
       </section>
 
@@ -319,17 +328,12 @@ const TuniLandingPage = () => {
       <section style={{ background: TUNI_COLORS.ink, color: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "920px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "rgba(255,247,241,0.08)", color: TUNI_COLORS.amber, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Sound familiar?</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.4vw, 50px)", lineHeight: 1.04, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.cream }}>You're changing all the things,<br /><span style={{ color: TUNI_COLORS["coral-light"] }}>but what is actually working?</span></h2>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "22px 0 0", maxWidth: "560px" }}>You eat well. You walk. You try to get enough protein. You go to the gym. Maybe you cut back on wine. Eat earlier. Sleep more. Drink more water.</p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: "12px", margin: "20px 0 0", maxWidth: "820px" }}>
-            {[{ text: "What you ate?", emoji: "🍽️" }, { text: "How much you moved?", emoji: "🚶‍♀️" }, { text: "Your protein?", emoji: "🍳" }, { text: "Your wine?", emoji: "🍷" }, { text: "Your sleep?", emoji: "😴" }, { text: "Your water?", emoji: "💧" }, { text: "Something else entirely?", emoji: "🤷‍♀️" }].map((item) => (
-              <span key={item.text} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "6px", background: "rgba(255,247,241,0.07)", border: "1px solid rgba(255,247,241,0.12)", color: TUNI_COLORS.cream, fontSize: "13px", fontWeight: 600, padding: "8px 12px", borderRadius: "999px", textAlign: "center", whiteSpace: "nowrap" }}>
-                <span style={{ fontSize: "16px", flexShrink: 0 }}>{item.emoji}</span>{item.text}
-              </span>
-            ))}
-          </div>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Sometimes you make progress. Then&hellip; nothing.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "16px 0 0", maxWidth: "560px" }}>And the most frustrating part? You don't know which thing actually made the difference.</p>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.4vw, 50px)", lineHeight: 1.04, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.cream }}>You're changing all the things.<br /><span style={{ color: TUNI_COLORS["coral-light"] }}>But which ones are actually helping?</span></h2>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "22px 0 0", maxWidth: "560px" }}>You eat well. You walk. You focus on protein. You go to the gym. Maybe you drink less wine, eat earlier, sleep more or drink more water.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Sometimes things move.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>Then they don't.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>And you have no idea why.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Was it the protein? The walking? The weekends? The timing? Something else entirely?</p>
           <div style={{ marginTop: "40px", paddingTop: "30px", borderTop: "1px solid rgba(255,247,241,0.12)" }}>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.2, color: "rgba(255,247,241,0.55)" }}>You don't need another list of rules.</div>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need better feedback.</div>
