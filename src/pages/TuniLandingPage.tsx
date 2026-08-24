@@ -483,7 +483,7 @@ const TuniLandingPage = () => {
       <section style={{ background: TUNI_COLORS["cream-pink"], padding: "84px 26px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Real life</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0", maxWidth: "720px" }}>Tuni is there in the moments when you're thinking, <span style={{ color: TUNI_COLORS.pink }}>"Okay&hellip; what should I do here?"</span></h2>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0", maxWidth: "720px" }}>Tuni helps when <span style={{ color: TUNI_COLORS.pink }}>real life happens.</span></h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", margin: "28px 0 24px" }}>
             {[
               { icon: <IconMenu color={TUNI_COLORS.coral} />, color: TUNI_COLORS.coral, text: "Looking at a menu." },
