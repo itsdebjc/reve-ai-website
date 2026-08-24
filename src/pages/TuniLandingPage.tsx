@@ -312,15 +312,6 @@ const TuniLandingPage = () => {
           <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A different kind of feedback</span>
           <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Most apps tell you what to do. <span style={{ color: TUNI_COLORS.pink }}>Tuni helps you see what's working.</span></h2>
           <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "560px", margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: "10px", margin: "32px 0 0" }}>
-            {["What you do", "What changes", "What you learn", "What you adjust"].map((step, i) => (
-              <div key={step} style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.ink, fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "15px", padding: "10px 18px", borderRadius: "999px", boxShadow: "0 4px 12px rgba(42,33,28,0.06)" }}>{step}</span>
-                {i < 3 && <span style={{ color: TUNI_COLORS.pink, fontWeight: 700, fontSize: "16px" }}>→</span>}
-              </div>
-            ))}
-          </div>
-          <p style={{ fontSize: "14px", fontStyle: "italic", color: TUNI_COLORS["muted-gray"], marginTop: "16px" }}>That is the product in one line.</p>
         </div>
       </section>
 
@@ -333,7 +324,14 @@ const TuniLandingPage = () => {
           <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Sometimes things move.</p>
           <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>Then they don't.</p>
           <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>And you have no idea why.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Was it the protein? The walking? The weekends? The timing? Something else entirely?</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Was it&hellip;</p>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: "12px", margin: "16px 0 0", maxWidth: "820px" }}>
+            {["The protein?", "The walking?", "The weekends?", "The timing?", "Something else entirely?"].map((text) => (
+              <span key={text} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "rgba(255,247,241,0.07)", border: "1px solid rgba(255,247,241,0.12)", color: TUNI_COLORS.cream, fontSize: "13px", fontWeight: 600, padding: "8px 14px", borderRadius: "999px", textAlign: "center", whiteSpace: "nowrap" }}>
+                {text}
+              </span>
+            ))}
+          </div>
           <div style={{ marginTop: "40px", paddingTop: "30px", borderTop: "1px solid rgba(255,247,241,0.12)" }}>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.2, color: "rgba(255,247,241,0.55)" }}>You don't need another list of rules.</div>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need better feedback.</div>
