@@ -420,14 +420,14 @@ const TuniLandingPage = () => {
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Most apps give you a plan. <span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span></h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni helps you connect your everyday choices with what your body is actually doing over time, so you can stop guessing and learn what works for you.</p>
-            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "18px", lineHeight: 1.5, color: TUNI_COLORS.ink, maxWidth: "520px", margin: "16px 0 0" }}>Talk it. Type it. Snap it. Scan it. Ask Tuni.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Food apps track food. Scales give you numbers. Tuni helps you connect the two.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>Tuni looks across what you eat, how you move and what's changing in your body to help you spot patterns and decide what to adjust next.</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "36px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
-                { line1: "Log your food", line2: "your way.", details: ["Talk it, type it or snap a photo. Tuni makes it easy to capture what you ate without turning your day into a tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
-                { line1: "A coach that", line2: "knows your data.", details: ["Tuni looks across your food, movement, timing and body changes to help you understand what may be working and what might be getting in the way.", "Ask Tuni questions, get feedback and learn from your own patterns."], tag: "A coach that knows your data.", color: TUNI_COLORS.pink },
-                { line1: "See what's", line2: "actually changing.", details: ["Upload your weekly body composition scan to see what's changing beneath the surface, not just what the scale says.", "See changes in body fat, muscle and more over time."], tag: "Beyond the scale.", color: TUNI_COLORS.amber },
-                { line1: "Eating out?", line2: "Snap the menu.", details: ["Upload a menu and Tuni helps you spot choices that fit what you're working on, without making eating out feel complicated."], tag: "Menu Mode.", color: TUNI_COLORS.green },
+                { line1: "Log your food", line2: "your way.", details: ["Talk it, type it or snap it."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
+                { line1: "A coach that", line2: "knows your data.", details: ["Ask questions and get feedback based on your food, movement, timing and body changes."], tag: "A coach that knows your data.", color: TUNI_COLORS.pink },
+                { line1: "See what's", line2: "actually changing.", details: ["Upload your weekly body composition scan and see what's happening beyond weight."], tag: "Beyond the scale.", color: TUNI_COLORS.amber },
+                { line1: "Eating out?", line2: "Snap the menu.", details: ["Get help choosing something that fits what you're working on."], tag: "Menu Mode.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
@@ -443,9 +443,9 @@ const TuniLandingPage = () => {
               ))}
             </div>
             <div style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
-              <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "12px" }}>Your body gives you feedback. Tuni helps you see it.</div>
+              <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "12px" }}>Your body is already giving you feedback. Tuni helps you make sense of it.</div>
               <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0 0 12px" }}>No calorie counting. No perfect days. No generic plan.</p>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, color: TUNI_COLORS["muted-gray"], margin: "0" }}>Just a clearer picture of what your body is responding to, plus a coach that helps you make sense of it.</p>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: TUNI_COLORS["muted-gray"], margin: "0" }}>Just a clearer picture of what your body is responding to, plus a coach to help you figure out what's next.</p>
             </div>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.28)", border: "none", cursor: "pointer", marginTop: "28px" }}>Join a live Tuni workshop →</button>
           </div>
