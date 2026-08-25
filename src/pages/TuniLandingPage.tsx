@@ -389,7 +389,7 @@ const TuniLandingPage = () => {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", margin: "18px 0" }}>
               {[
                 { val: "124.2 → 114.2 lb", label: "10 lb lighter", color: TUNI_COLORS.coral },
-                { val: "32.3% → 28.1%", label: "body fat", color: TUNI_COLORS.pink },
+                { val: "32.3% → 25.7%", label: "body fat", color: TUNI_COLORS.pink },
                 { val: "20.0 → 15.4 lb", label: "trunk fat", color: TUNI_COLORS.amber },
                 { val: "7 → 5", label: "visceral fat", color: TUNI_COLORS.green },
               ].map((stat) => (
