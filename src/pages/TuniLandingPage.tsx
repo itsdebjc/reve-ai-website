@@ -420,18 +420,17 @@ const TuniLandingPage = () => {
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Most apps give you a plan. <span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span></h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Food apps track food. Scales give you numbers. Tuni helps you connect the two.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>Tuni looks across what you eat, how you move and what's changing in your body to help you spot patterns and decide what to adjust next.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, movement and body changes together so you can see patterns, ask questions and understand what this means for your body.</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "36px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
-                { line1: "Log your food", line2: "your way.", details: ["Talk it, type it or snap it."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
-                { line1: "A coach that", line2: "knows your data.", details: ["Ask questions and get feedback based on your food, movement, timing and body changes."], tag: "A coach that knows your data.", color: TUNI_COLORS.pink },
-                { line1: "See what's", line2: "actually changing.", details: ["Upload your weekly body composition scan and see what's happening beyond weight."], tag: "Beyond the scale.", color: TUNI_COLORS.amber },
-                { line1: "Eating out?", line2: "Snap the menu.", details: ["Get help choosing something that fits what you're working on."], tag: "Menu Mode.", color: TUNI_COLORS.green },
+                { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it. Type it. Snap a photo.", "Capture meals and everyday choices without weighing every ingredient or turning your day into a tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
+                { num: "02", line1: "Ask", line2: "a coach that knows your data.", details: ["Ask Tuni about your day, your patterns or your progress.", "Tuni looks across your food, movement, timing and body changes to help you see what may be working and what might be getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
+                { num: "03", line1: "Scan", line2: "what's actually changing.", details: ["Add your weekly body composition scan and see what's happening beneath the number on the scale.", "Follow changes in body fat, muscle and more over time."], tag: "Beyond weight.", color: TUNI_COLORS.amber },
+                { num: "04", line1: "Snap", line2: "food in front of you.", details: ["Restaurant menu. Packaged food. Nutrition label. Something you're thinking about eating.", "Take a photo and ask Tuni to help you make sense of it based on what you're working on."], tag: "Real-life food help.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
-                    <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: item.color, letterSpacing: "0.02em" }}>0{i + 1}</span>
+                    <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: item.color, letterSpacing: "0.02em" }}>{item.num}</span>
                     <span style={{ flex: 1, height: "1px", background: "rgba(42,33,28,0.15)", maxWidth: "56px" }} />
                   </div>
                   <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: item.color }}>{item.line2}</span></h3>
@@ -445,7 +444,7 @@ const TuniLandingPage = () => {
             <div style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "12px" }}>Your body is already giving you feedback. Tuni helps you make sense of it.</div>
               <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0 0 12px" }}>No calorie counting. No perfect days. No generic plan.</p>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, color: TUNI_COLORS["muted-gray"], margin: "0" }}>Just a clearer picture of what your body is responding to, plus a coach to help you figure out what's next.</p>
+              <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0" }}>Just your real life, your own data and a clearer idea of what may be working, what might be getting in the way and what you want to try next.</p>
             </div>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.28)", border: "none", cursor: "pointer", marginTop: "28px" }}>Join a live Tuni workshop →</button>
           </div>
