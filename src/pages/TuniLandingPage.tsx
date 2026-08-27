@@ -255,6 +255,9 @@ const TuniLandingPage = () => {
         @keyframes bffMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
         details summary::-webkit-details-marker { display: none; }
         details[open] .bff-faq-plus { transform: rotate(45deg); transition: transform 0.2s; }
+        @media (min-width: 640px) {
+          .bff-nowrap-desktop { white-space: nowrap; }
+        }
         @media (max-width: 768px) {
           .bff-grid-2col { grid-template-columns: 1fr !important; }
           .bff-grid-4col { grid-template-columns: 1fr 1fr !important; }
@@ -680,8 +683,8 @@ const TuniLandingPage = () => {
       <section style={{ position: "relative", minHeight: "620px", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
         <img src={heroCherryBlossom} alt="Cherry blossom landscape" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover" }} />
         <div style={{ position: "absolute", inset: "0", background: "linear-gradient(180deg, rgba(42,33,28,0.28), rgba(42,33,28,0.6))" }} />
-        <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "80px 26px", maxWidth: "780px" }}>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-0.02em", color: TUNI_COLORS.cream, margin: "0", textShadow: "0 2px 20px rgba(42,33,28,0.4)" }}>You don't have to figure this out <span style={{ color: "#FFC8A0" }}>alone.</span></h2>
+        <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "80px 26px", maxWidth: "980px" }}>
+          <h2 className="bff-nowrap-desktop" style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 4.4vw, 50px)", lineHeight: 1.08, letterSpacing: "-0.02em", color: TUNI_COLORS.cream, margin: "0", textShadow: "0 2px 20px rgba(42,33,28,0.4)" }}>You don't have to figure this out <span style={{ color: "#FFC8A0" }}>alone.</span></h2>
           <button onClick={handleWaitlist} style={{ display: "inline-block", marginTop: "26px", fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink, background: TUNI_COLORS.cream, padding: "15px 28px", borderRadius: "999px", border: "none", cursor: "pointer", boxShadow: "0 14px 30px rgba(0,0,0,0.25)" }}>Join Tuni — $15 today →</button>
         </div>
       </section>
