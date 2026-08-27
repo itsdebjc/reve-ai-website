@@ -709,7 +709,7 @@ const TuniLandingPage = () => {
               ) },
               { q: "Will Tuni tell me exactly what to eat?", a: "No. Tuni isn't there to give every woman the same food plan. It helps you understand your own patterns so you can make more informed choices." },
               { q: "Is this medical advice?", a: "No. Tuni is for general wellness and education only. It is not medical advice, diagnosis or treatment." },
-              { q: "When do I get access to Tuni?", a: "You'll receive access as part of the workshop so we can get you set up and started together." },
+              { q: "When do I get access to Tuni?", a: "As soon as you join the workshop, you get access to download Tuni. Then during the workshop, we'll show you how to set it up and work through it together." },
             ].map((item) => (
               <details key={item.q} id={item.q.includes("body composition") ? "scale-faq" : undefined} style={{ background: "#fff", border: `1px solid rgba(42,33,28,0.07)`, borderRadius: "16px", padding: "4px 22px" }}>
                 <summary style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", cursor: "pointer", listStyle: "none", padding: "18px 0", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 700, fontSize: "17px", color: TUNI_COLORS.ink }}>
