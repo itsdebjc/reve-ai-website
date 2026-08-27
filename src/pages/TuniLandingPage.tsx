@@ -320,22 +320,26 @@ const TuniLandingPage = () => {
       <section style={{ background: TUNI_COLORS.ink, color: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "920px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "rgba(255,247,241,0.08)", color: TUNI_COLORS.amber, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Sound familiar?</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.4vw, 50px)", lineHeight: 1.04, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.cream }}>You're changing all the things.<br /><span style={{ color: TUNI_COLORS["coral-light"] }}>But which ones are actually helping?</span></h2>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "22px 0 0", maxWidth: "560px" }}>You eat well. You walk. You focus on protein. You go to the gym. Maybe you drink less wine, eat earlier, sleep more or drink more water.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Sometimes things move.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>Then they don't.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>And you have no idea why.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>Was it&hellip;</p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: "12px", margin: "16px 0 0", maxWidth: "820px" }}>
-            {["The protein?", "The walking?", "The weekends?", "The timing?", "Something else entirely?"].map((text) => (
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 4.4vw, 50px)", lineHeight: 1.04, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.cream }}>You're doing all the right things.<br /><span style={{ color: TUNI_COLORS["coral-light"] }}>But your body still isn't responding.</span></h2>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "flex-start", gap: "12px", margin: "26px 0 0", maxWidth: "820px" }}>
+            {["Protein", "Intermittent fasting", "Strength training", "Less wine", "More sleep", "Hormones", "Eating better", "More water"].map((text) => (
               <span key={text} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "rgba(255,247,241,0.07)", border: "1px solid rgba(255,247,241,0.12)", color: TUNI_COLORS.cream, fontSize: "13px", fontWeight: 600, padding: "8px 14px", borderRadius: "999px", textAlign: "center", whiteSpace: "nowrap" }}>
                 {text}
               </span>
             ))}
           </div>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "26px 0 0", maxWidth: "560px" }}>You're trying. A lot.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>But when nothing seems to be changing, you're still left wondering:</p>
+          <div style={{ margin: "16px 0 0", maxWidth: "560px" }}>
+            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: 0 }}>What is actually working?</p>
+            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: "6px 0 0" }}>What might be getting in the way?</p>
+            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: "6px 0 0" }}>And what does this mean for my body?</p>
+          </div>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "22px 0 0", maxWidth: "560px" }}>Sometimes you make progress. Then&hellip; nothing.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>And the hardest part is not knowing why.</p>
           <div style={{ marginTop: "40px", paddingTop: "30px", borderTop: "1px solid rgba(255,247,241,0.12)" }}>
-            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.2, color: "rgba(255,247,241,0.55)" }}>You don't need another list of rules.</div>
-            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need better feedback.</div>
+            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.2, color: "rgba(255,247,241,0.55)" }}>You don't need another plan.</div>
+            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need to understand what your body is responding to.</div>
           </div>
         </div>
       </section>
