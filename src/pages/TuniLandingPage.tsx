@@ -312,7 +312,7 @@ const TuniLandingPage = () => {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A different kind of feedback</span>
           <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Most apps tell you what to do. <span style={{ color: TUNI_COLORS.pink }}>Tuni helps you see what's working.</span></h2>
-          <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "560px", margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
+          <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "620px", margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
         </div>
       </section>
 
@@ -329,7 +329,7 @@ const TuniLandingPage = () => {
             ))}
           </div>
           <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "26px 0 0", maxWidth: "560px" }}>You're trying. A lot.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "560px" }}>But when nothing seems to be changing, you're still left wondering:</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "760px" }}>But when nothing seems to be changing, you're still left wondering:</p>
           <div style={{ margin: "16px 0 0", maxWidth: "560px" }}>
             <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: 0 }}>What is actually working?</p>
             <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: "6px 0 0" }}>What might be getting in the way?</p>
@@ -426,7 +426,8 @@ const TuniLandingPage = () => {
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Most apps give you a plan. <span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span></h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, movement and body changes together so you can see patterns, ask questions and understand what this means for your body.</p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "36px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
+            <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how Tuni turns that into feedback:</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
                 { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it. Type it. Snap a photo.", "Capture meals and everyday choices without weighing every ingredient or turning your day into a tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
                 { num: "02", line1: "Ask", line2: "a coach that knows your data.", details: ["Ask Tuni about your day, your patterns or your progress.", "Tuni looks across your food, movement, timing and body changes to help you see what may be working and what might be getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
@@ -467,7 +468,7 @@ const TuniLandingPage = () => {
 
       {/* MARQUEE TICKER */}
       <section style={{ background: TUNI_COLORS.ink, overflow: "hidden", padding: "15px 0" }}>
-        <div style={{ display: "flex", width: "max-content", animation: "bffMarquee 24s linear infinite" }}>
+        <div style={{ display: "flex", width: "max-content", animation: "bffMarquee 46s linear infinite" }}>
           {Array(6).fill(["Talk it", "Type it", "Snap it", "Scan it", "Ask Tuni"]).flat().map((text, i) => (
             <span key={`${i}-1`} style={{ padding: "0 22px", fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "16px", color: TUNI_COLORS.cream, whiteSpace: "nowrap", display: "flex", alignItems: "center" }}>
               {text}
@@ -572,7 +573,76 @@ const TuniLandingPage = () => {
         </div>
       </section>
 
-      {/* WHO IT'S FOR */}
+      {/* LANDSCAPE STATEMENT */}
+      <section style={{ position: "relative", minHeight: "620px", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+        <img src={heroCherryBlossom} alt="Cherry blossom landscape" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover" }} />
+        <div style={{ position: "absolute", inset: "0", background: "linear-gradient(180deg, rgba(42,33,28,0.28), rgba(42,33,28,0.6))" }} />
+        <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "80px 26px", maxWidth: "780px" }}>
+          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-0.02em", color: TUNI_COLORS.cream, margin: "0", textShadow: "0 2px 20px rgba(42,33,28,0.4)" }}>You don't have to figure this out <span style={{ color: "#FFC8A0" }}>alone.</span></h2>
+          <button onClick={handleWaitlist} style={{ display: "inline-block", marginTop: "26px", fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink, background: TUNI_COLORS.cream, padding: "15px 28px", borderRadius: "999px", border: "none", cursor: "pointer", boxShadow: "0 14px 30px rgba(0,0,0,0.25)" }}>Join Tuni — $15 today →</button>
+        </div>
+      </section>
+
+      {/* 1. JOIN THE TUNI WORKSHOP */}
+      <section id="bff-waitlist" style={{ background: TUNI_COLORS.cream, padding: "84px 26px", scrollMarginTop: "70px" }}>
+        <div className="bff-grid-2col" style={{ maxWidth: "1040px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.05fr 0.95fr", gap: "54px", alignItems: "center" }}>
+          <div>
+            <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Choose what works for you</span>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.2vw, 48px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Join a live Tuni workshop. <span style={{ color: TUNI_COLORS.pink }}>Pick the date that works best for you.</span></h2>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>I'm starting with small live workshops because I don't want to hand you an app and expect you to figure it out by yourself.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>I'll show you exactly how I use Tuni in real life.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>We'll log meals together. I'll show you how to use restaurant menus, packaged food and everyday meals. And I'll help you get set up so you can start learning from your own information.</p>
+            <div style={{ display: "flex", gap: "10px", marginTop: "26px", flexWrap: "wrap" }}>
+              {["$15 intro", "Live online with Deb", "60 minutes", "Tuni access included"].map((label, i) => (
+                <span key={label} style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: [TUNI_COLORS.coral, TUNI_COLORS.pink, TUNI_COLORS.amber, TUNI_COLORS.green][i], fontSize: "13px", fontWeight: 700, padding: "9px 16px", borderRadius: "999px", boxShadow: "0 4px 12px rgba(42,33,28,0.04)" }}>{label}</span>
+              ))}
+            </div>
+            <button onClick={() => document.getElementById("workshop-form")?.scrollIntoView({ behavior: "smooth", block: "center" })} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.30)", border: "none", cursor: "pointer", marginTop: "26px" }}>Join Tuni — $15 today →</button>
+          </div>
+          <div id="workshop-form" style={{ background: "#fff", borderRadius: "24px", padding: "36px 34px", boxShadow: "0 24px 56px rgba(42,33,28,0.12)" }}>
+            {!form.submitted ? (
+              <>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
+                  <RadiantHeart size={30} />
+                  <TuniWordmark size={24} />
+                </div>
+                <div style={{ fontSize: "15px", fontWeight: 700, color: TUNI_COLORS.ink, marginTop: "10px" }}>Tuni Workshop + Membership</div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: "8px", marginTop: "4px" }}>
+                  <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 900, fontSize: "34px", color: TUNI_COLORS.ink }}>$15</span>
+                  <span style={{ fontSize: "14px", fontWeight: 700, color: TUNI_COLORS["muted-gray"] }}>today · intro price</span>
+                </div>
+                <div style={{ fontSize: "13px", color: TUNI_COLORS["muted-gray"], marginTop: "2px" }}>Then $15/month. Cancel anytime.</div>
+                <div style={{ fontSize: "13px", fontWeight: 700, color: TUNI_COLORS.ink, marginTop: "18px", marginBottom: "8px" }}>Includes:</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: "7px", marginBottom: "22px" }}>
+                  {["Live Tuni workshop", "Tuni app access", "First month of Tuni membership"].map((item) => (
+                    <div key={item} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                      <span style={{ color: TUNI_COLORS.green, fontWeight: 800, fontSize: "14px" }}>✓</span>
+                      <span style={{ fontSize: "14px", color: TUNI_COLORS["body-text"] }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <form onSubmit={handleFormSubmit} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+                  <input type="text" placeholder="First name" value={form.name} onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))} style={{ fontSize: "15px", color: TUNI_COLORS.ink, padding: "15px 18px", border: `1.5px solid #ece2da`, borderRadius: "14px", outline: "none", background: TUNI_COLORS["cream-alt"], fontFamily: "'Plus Jakarta Sans', sans-serif" }} required />
+                  <input type="email" placeholder="Email address" value={form.email} onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))} style={{ fontSize: "15px", color: TUNI_COLORS.ink, padding: "15px 18px", border: `1.5px solid #ece2da`, borderRadius: "14px", outline: "none", background: TUNI_COLORS["cream-alt"], fontFamily: "'Plus Jakarta Sans', sans-serif" }} required />
+                  <button type="submit" style={{ fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, border: "none", padding: "16px", borderRadius: "999px", cursor: "pointer", boxShadow: "0 14px 30px rgba(240,80,140,0.30)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Join Tuni — $15 today →</button>
+                </form>
+                <div style={{ fontSize: "12px", color: TUNI_COLORS["placeholder-gray"], textAlign: "center", marginTop: "14px" }}>Pick a time, then pay — both take under two minutes.</div>
+              </>
+            ) : (
+              <div style={{ textAlign: "center", padding: "18px 6px" }}>
+                <div style={{ marginBottom: "14px", display: "flex", justifyContent: "center" }}>
+                  <RadiantHeart size={56} />
+                </div>
+                <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "28px", color: TUNI_COLORS.ink }}>You're on the list.</div>
+                <p style={{ fontSize: "15px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "12px auto 0", maxWidth: "300px" }}>I'll be in touch when the first invites go out.</p>
+                <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "24px", color: TUNI_COLORS.pink, marginTop: "16px" }}>Talk soon, Deb</div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* 2. IS THIS FOR YOU? */}
       <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42,33,28,0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Is this you?</span>
@@ -601,80 +671,32 @@ const TuniLandingPage = () => {
         </div>
       </section>
 
-      {/* WHAT'S INCLUDED */}
-      <section style={{ background: TUNI_COLORS.cream, padding: "84px 26px" }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-          <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42,33,28,0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>What's included</span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.06, letterSpacing: "-0.02em", margin: "22px 0 0" }}>What you'll get</h2>
-          <div className="bff-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", margin: "34px 0 26px" }}>
+      {/* 3. WHAT'S INCLUDED */}
+      <section style={{ background: TUNI_COLORS["cream-alt"], padding: "84px 26px" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42,33,28,0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>What's included</span>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.06, letterSpacing: "-0.02em", margin: "22px 0 0" }}>One booking. Five things.</h2>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0", maxWidth: "560px" }}>This isn't just a workshop ticket. Your $15 today sets you up with everything below.</p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "34px" }}>
             {[
-              { title: "Live Tuni workshop", desc: "A guided session that starts with why I built Tuni, then shows you how to use it in real life." },
-              { title: "The story behind Tuni", desc: "What I learned from my own experience and why another plan was not the answer." },
-              { title: "Tuni setup", desc: "Choose your starting point and set up a simple daily logging rhythm." },
-              { title: "Weekly review method", desc: "Look back, spot possible patterns and choose one useful next step." },
-              { title: "Real-life examples", desc: "See how Tuni fits meals, restaurants, weekends, busy days and \"I feel off\" moments." },
+              { title: "Live Tuni workshop", desc: "A guided session that starts with why I built Tuni, then shows you how to use it in real life.", icon: <IconChat color={TUNI_COLORS.coral} />, color: TUNI_COLORS.coral },
+              { title: "The story behind Tuni", desc: "What I learned from my own experience and why another plan was not the answer.", icon: <IconHeartLine color={TUNI_COLORS.pink} />, color: TUNI_COLORS.pink },
+              { title: "Tuni setup", desc: "Choose your starting point and set up a simple daily logging rhythm.", icon: <IconCompass color={TUNI_COLORS.amber} />, color: TUNI_COLORS.amber },
+              { title: "Weekly review method", desc: "Look back, spot possible patterns and choose one useful next step.", icon: <IconClock color={TUNI_COLORS.green} />, color: TUNI_COLORS.green },
+              { title: "Real-life examples", desc: "See how Tuni fits meals, restaurants, weekends, busy days and \"I feel off\" moments.", icon: <IconMenu color={TUNI_COLORS["coral-light"]} />, color: TUNI_COLORS["coral-light"] },
             ].map((item) => (
-              <div key={item.title} style={{ background: "#fff", borderRadius: "16px", padding: "22px 24px", display: "flex", flexDirection: "column", gap: "8px", boxShadow: "0 6px 16px rgba(42,33,28,0.05)" }}>
-                <span style={{ fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink }}>{item.title}</span>
-                <span style={{ fontSize: "15px", color: TUNI_COLORS["body-text"], lineHeight: 1.45 }}>{item.desc}</span>
+              <div key={item.title} style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "#fff", border: "1px solid rgba(42,33,28,0.06)", borderRadius: "16px", padding: "20px 22px", boxShadow: "0 6px 16px rgba(42,33,28,0.05)" }}>
+                <IconBadge color={item.color}>{item.icon}</IconBadge>
+                <div>
+                  <div style={{ fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink }}>{item.title}</div>
+                  <div style={{ fontSize: "15px", color: TUNI_COLORS["body-text"], lineHeight: 1.45, marginTop: "2px" }}>{item.desc}</div>
+                </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* LANDSCAPE STATEMENT */}
-      <section style={{ position: "relative", minHeight: "620px", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
-        <img src={heroCherryBlossom} alt="Cherry blossom landscape" style={{ position: "absolute", inset: "0", width: "100%", height: "100%", objectFit: "cover" }} />
-        <div style={{ position: "absolute", inset: "0", background: "linear-gradient(180deg, rgba(42,33,28,0.28), rgba(42,33,28,0.6))" }} />
-        <div style={{ position: "relative", zIndex: 1, textAlign: "center", padding: "80px 26px", maxWidth: "780px" }}>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(34px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-0.02em", color: TUNI_COLORS.cream, margin: "0", textShadow: "0 2px 20px rgba(42,33,28,0.4)" }}>You don't have to figure this out <span style={{ color: "#FFC8A0" }}>alone.</span></h2>
-          <button onClick={handleWaitlist} style={{ display: "inline-block", marginTop: "26px", fontSize: "16px", fontWeight: 700, color: TUNI_COLORS.ink, background: TUNI_COLORS.cream, padding: "15px 28px", borderRadius: "999px", border: "none", cursor: "pointer", boxShadow: "0 14px 30px rgba(0,0,0,0.25)" }}>Join Tuni — $15 today →</button>
-        </div>
-      </section>
-
-      {/* CHOOSE YOUR WORKSHOP */}
-      <section id="bff-waitlist" style={{ background: TUNI_COLORS.cream, padding: "84px 26px", scrollMarginTop: "70px" }}>
-        <div className="bff-grid-2col" style={{ maxWidth: "1040px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.05fr 0.95fr", gap: "54px", alignItems: "center" }}>
-          <div>
-            <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Choose what works for you</span>
-            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4.2vw, 48px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Join a live Tuni workshop. <span style={{ color: TUNI_COLORS.pink }}>Pick the date that works best for you.</span></h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>I'm starting with small live workshops because I don't want to hand you an app and expect you to figure it out by yourself.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>I'll show you exactly how I use Tuni in real life.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>We'll log meals together. I'll show you how to use restaurant menus, packaged food and everyday meals. And I'll help you get set up so you can start learning from your own information.</p>
-            <div style={{ display: "flex", gap: "10px", marginTop: "26px", flexWrap: "wrap" }}>
-              {["$15 intro", "Live online with Deb", "60 minutes", "Tuni access included"].map((label, i) => (
-                <span key={label} style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: [TUNI_COLORS.coral, TUNI_COLORS.pink, TUNI_COLORS.amber, TUNI_COLORS.green][i], fontSize: "13px", fontWeight: 700, padding: "9px 16px", borderRadius: "999px", boxShadow: "0 4px 12px rgba(42,33,28,0.04)" }}>{label}</span>
-              ))}
-            </div>
-            <button onClick={() => document.getElementById("workshop-form")?.scrollIntoView({ behavior: "smooth", block: "center" })} style={{ textDecoration: "none", display: "inline-block", fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, padding: "15px 28px", borderRadius: "999px", boxShadow: "0 14px 30px rgba(240,80,140,0.30)", border: "none", cursor: "pointer", marginTop: "26px" }}>Join Tuni — $15 today →</button>
-          </div>
-          <div id="workshop-form" style={{ background: "#fff", borderRadius: "24px", padding: "36px 34px", boxShadow: "0 24px 56px rgba(42,33,28,0.12)" }}>
-            {!form.submitted ? (
-              <>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                  <RadiantHeart size={30} />
-                  <TuniWordmark size={24} />
-                </div>
-                <div style={{ fontSize: "14px", color: TUNI_COLORS["body-text"], marginBottom: "22px" }}>Choose your date and get on the list.</div>
-                <form onSubmit={handleFormSubmit} style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-                  <input type="text" placeholder="First name" value={form.name} onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))} style={{ fontSize: "15px", color: TUNI_COLORS.ink, padding: "15px 18px", border: `1.5px solid #ece2da`, borderRadius: "14px", outline: "none", background: TUNI_COLORS["cream-alt"], fontFamily: "'Plus Jakarta Sans', sans-serif" }} required />
-                  <input type="email" placeholder="Email address" value={form.email} onChange={(e) => setForm((p) => ({ ...p, email: e.target.value }))} style={{ fontSize: "15px", color: TUNI_COLORS.ink, padding: "15px 18px", border: `1.5px solid #ece2da`, borderRadius: "14px", outline: "none", background: TUNI_COLORS["cream-alt"], fontFamily: "'Plus Jakarta Sans', sans-serif" }} required />
-                  <button type="submit" style={{ fontSize: "16px", fontWeight: 700, color: "#fff", background: `linear-gradient(135deg, ${TUNI_COLORS.coral}, ${TUNI_COLORS.pink})`, border: "none", padding: "16px", borderRadius: "999px", cursor: "pointer", boxShadow: "0 14px 30px rgba(240,80,140,0.30)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>Choose this workshop</button>
-                </form>
-                <div style={{ fontSize: "12px", color: TUNI_COLORS["placeholder-gray"], textAlign: "center", marginTop: "14px" }}>Can't make that one? Choose another upcoming date.</div>
-              </>
-            ) : (
-              <div style={{ textAlign: "center", padding: "18px 6px" }}>
-                <div style={{ marginBottom: "14px", display: "flex", justifyContent: "center" }}>
-                  <RadiantHeart size={56} />
-                </div>
-                <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "28px", color: TUNI_COLORS.ink }}>You're on the list.</div>
-                <p style={{ fontSize: "15px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], margin: "12px auto 0", maxWidth: "300px" }}>I'll be in touch when the first invites go out.</p>
-                <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "24px", color: TUNI_COLORS.pink, marginTop: "16px" }}>Talk soon, Deb</div>
-              </div>
-            )}
-          </div>
+          <p style={{ textAlign: "center", fontSize: "15px", fontWeight: 700, color: TUNI_COLORS.ink, marginTop: "24px" }}>$15 today. Then $15/month after your first month — cancel anytime.</p>
         </div>
       </section>
 
@@ -687,6 +709,7 @@ const TuniLandingPage = () => {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
             {[
+              { q: "Is the $15 a one-time payment?", a: "Your $15 today covers the live workshop and your first month of Tuni. After that, it's $15/month to keep using the app — cancel anytime." },
               { q: "Is Tuni a diet?", a: "No. Tuni doesn't give you a strict meal plan or ask you to follow someone else's diet. It helps you learn from what you're already eating and make changes based on what you're seeing." },
               { q: "Do I have to count calories or log perfectly?", a: "No. You don't need to weigh every ingredient or get every detail right. An estimate is fine. Consistency is more useful than perfection." },
               { q: "Do I need a body composition scale?", a: (
@@ -696,6 +719,7 @@ const TuniLandingPage = () => {
                 </>
               ) },
               { q: "Will Tuni tell me exactly what to eat?", a: "No. Tuni isn't there to give every woman the same food plan. It helps you understand your own patterns so you can make more informed choices." },
+              { q: "Is this medical advice?", a: "No. Tuni is for general wellness and education only. It is not medical advice, diagnosis or treatment." },
               { q: "When do I get access to Tuni?", a: "You'll receive access as part of the workshop so we can get you set up and started together." },
             ].map((item) => (
               <details key={item.q} id={item.q.includes("body composition") ? "scale-faq" : undefined} style={{ background: "#fff", border: `1px solid rgba(42,33,28,0.07)`, borderRadius: "16px", padding: "4px 22px" }}>
