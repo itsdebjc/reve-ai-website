@@ -335,18 +335,12 @@ const TuniLandingPage = () => {
               </span>
             ))}
           </div>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "26px 0 0", maxWidth: "560px" }}>You're trying. A lot.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "20px 0 0", maxWidth: "760px" }}>But when nothing seems to be changing, you're still left wondering:</p>
-          <div style={{ margin: "16px 0 0", maxWidth: "560px" }}>
-            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: 0 }}>What is actually working?</p>
-            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: "6px 0 0" }}>What might be getting in the way?</p>
-            <p style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "19px", lineHeight: 1.5, color: TUNI_COLORS.cream, margin: "6px 0 0" }}>And what does this mean for my body?</p>
-          </div>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "22px 0 0", maxWidth: "560px" }}>Sometimes you make progress. Then&hellip; nothing.</p>
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "10px 0 0", maxWidth: "560px" }}>And the hardest part is not knowing why.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "26px 0 0", maxWidth: "560px" }}>You're putting in the effort.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "12px 0 0", maxWidth: "620px" }}>But when progress stalls, you don't know what's helping, what's getting in the way or what to change.</p>
+          <p style={{ fontSize: "18px", lineHeight: 1.6, color: "rgba(255,247,241,0.72)", margin: "12px 0 0", maxWidth: "560px" }}>The hardest part is not knowing why.</p>
           <div style={{ marginTop: "40px", paddingTop: "30px", borderTop: "1px solid rgba(255,247,241,0.12)" }}>
             <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 700, fontSize: "clamp(22px, 2.6vw, 30px)", lineHeight: 1.2, color: "rgba(255,247,241,0.55)" }}>You don't need another plan.</div>
-            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need to understand what your body is responding to.</div>
+            <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.4vw, 40px)", lineHeight: 1.15, color: TUNI_COLORS.amber, marginTop: "6px" }}>You need feedback from your own body.</div>
           </div>
         </div>
       </section>
