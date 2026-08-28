@@ -319,7 +319,7 @@ const TuniLandingPage = () => {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", color: TUNI_COLORS.pink, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>A different kind of feedback</span>
           <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.15, letterSpacing: "-0.02em", margin: "22px 0 0", color: TUNI_COLORS.ink }}>Most apps tell you what to do. <span style={{ color: TUNI_COLORS.pink }}>Tuni helps you see what's working.</span></h2>
-          <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "620px", margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
+          <p className="bff-nowrap-desktop" style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0" }}>Tuni connects your everyday choices with what your body is doing over time.</p>
         </div>
       </section>
 
@@ -551,7 +551,7 @@ const TuniLandingPage = () => {
             ))}
           </div>
 
-          <p style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "36px auto 0", maxWidth: "560px" }}>Because the goal isn't to follow someone else's plan. It's to figure out what works for you.</p>
+          <p className="bff-nowrap-desktop" style={{ fontSize: "18px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 600, margin: "36px auto 0" }}>Because the goal isn't to follow someone else's plan. It's to figure out what works for you.</p>
         </div>
       </section>
 
@@ -634,7 +634,7 @@ const TuniLandingPage = () => {
           <div style={{ textAlign: "center" }}>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42,33,28,0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>What's included</span>
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.06, letterSpacing: "-0.02em", margin: "22px 0 0" }}>Everything you need to get started.</h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0", maxWidth: "560px" }}>Your $15 today includes the Tuni app, your first month and a live workshop with Deb if you'd like one.</p>
+            <p className="bff-nowrap-desktop" style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "16px auto 0" }}>Your $15 today includes the Tuni app, your first month and a live workshop with Deb if you'd like one.</p>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginTop: "34px" }}>
             {[
@@ -733,7 +733,7 @@ const TuniLandingPage = () => {
           </span>
           <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(38px, 5.5vw, 66px)", lineHeight: 1, letterSpacing: "-0.03em", color: "#fff", margin: "24px 0 0" }}>Ready to stop guessing?</h2>
           <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 700, fontSize: "clamp(34px, 4.5vw, 52px)", lineHeight: 1, color: "#FFE3D0", marginTop: "8px" }}>Tune in to what works.</div>
-          <p style={{ fontSize: "17px", lineHeight: 1.6, color: "rgba(255,255,255,0.9)", maxWidth: "560px", margin: "20px auto 0" }}>Start Tuni today, or join a live workshop first if you'd like to see how it works.</p>
+          <p className="bff-nowrap-desktop" style={{ fontSize: "17px", lineHeight: 1.6, color: "rgba(255,255,255,0.9)", margin: "20px auto 0" }}>Start Tuni today, or join a live workshop first if you'd like to see how it works.</p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center", marginTop: "30px" }}>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "17px", fontWeight: 700, color: TUNI_COLORS.pink, background: "#fff", padding: "17px 36px", borderRadius: "999px", boxShadow: "0 16px 36px rgba(42,33,28,0.22)", border: "none", cursor: "pointer" }}>Start Tuni →</button>
             <button onClick={handleWaitlist} style={{ textDecoration: "none", display: "inline-block", fontSize: "17px", fontWeight: 700, color: "#fff", background: "transparent", padding: "16px 34px", borderRadius: "999px", border: "1.5px solid rgba(255,255,255,0.6)", cursor: "pointer" }}>Join a Live Workshop</button>
