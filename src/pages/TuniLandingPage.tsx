@@ -356,14 +356,11 @@ const TuniLandingPage = () => {
           </div>
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#fff", border: `1px solid rgba(42, 33, 28, 0.08)`, color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>Why I built Tuni</span>
-            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "20px 0 0" }}>I was doing all the right things. <span style={{ color: TUNI_COLORS.pink }}>But nothing was working.</span></h2>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(30px, 4vw, 46px)", lineHeight: 1.05, letterSpacing: "-0.02em", margin: "20px 0 0" }}>I was doing all the right things. <span style={{ color: TUNI_COLORS.pink }}>But my body wasn't changing.</span></h2>
             <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "20px 0 0" }}>Hi, I'm Deb.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I've always been pretty healthy and active.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Then I hit midlife and the things that had always worked for me didn't seem to work anymore.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>So I tried harder.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "6px 0 0" }}>I worked out more. Focused on protein. Hired trainers. Took supplements. Started HRT. Tried to make better choices.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I really felt like I was doing all the right things.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, margin: "6px 0 0" }}>But my body wasn't changing.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>When I hit midlife, the things that had always worked for me stopped working.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>So I tried harder. More workouts. More protein. Trainers, supplements, HRT and better choices.</p>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, margin: "12px 0 0" }}>But my body stayed the same.</p>
             <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I had more information than ever, but I still couldn't tell what was actually working for me.</p>
             <div style={{ marginTop: "24px", paddingLeft: "18px", borderLeft: "2px solid rgba(240,80,140,0.3)" }}>
               <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "26px", lineHeight: 1.25, color: TUNI_COLORS.ink }}>The hardest part wasn't the weight. It was the confusion.</div>
@@ -384,13 +381,11 @@ const TuniLandingPage = () => {
               ))}
             </div>
 
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Years were going by and I was basically in the same place.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I was trying. A lot. I just didn't have useful feedback.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>So I stopped adding more rules and started paying closer attention to what I was already doing.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "6px 0 0" }}>What I ate. How much protein I was getting. When I ate. What happened on weekends. What changed when I was consistent.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>And slowly, I started seeing patterns.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, margin: "6px 0 0" }}>Then things started to change.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>My numbers finally started moving.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>So I stopped adding more rules and started paying attention to what I was already doing: what I ate, protein, timing, weekends and consistency.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Slowly, the patterns started to show.</p>
+            <div style={{ marginTop: "24px", paddingLeft: "18px", borderLeft: "2px solid rgba(240,80,140,0.3)" }}>
+              <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "26px", lineHeight: 1.25, color: TUNI_COLORS.ink }}>Then my numbers started to move.</div>
+            </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", margin: "18px 0" }}>
               {[
@@ -406,14 +401,16 @@ const TuniLandingPage = () => {
               ))}
             </div>
 
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>And 8 of those 10 pounds were fat, not muscle. That part matters to me at 54.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I'm proud of those numbers, but the biggest difference is that I understand my body so much better now.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>I found meals that work well for me. I got more consistent. I started seeing which choices seemed to help and which didn't.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Sushi is a funny example. I still eat it, but now I know my body often reacts afterwards.</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "6px 0 0" }}>That doesn't make sushi bad.</p>
-            <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "24px", lineHeight: 1.3, color: TUNI_COLORS.pink, marginTop: "14px" }}>It just means now I know. And knowing changes the choice.</div>
-            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "18px 0 0" }}>That process became Tuni.</p>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, margin: "6px 0 0" }}>I wasn't missing effort. I was missing feedback.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Eight of the 10 pounds I lost were fat, not muscle. That mattered to me at 54.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>But the biggest change was finally understanding what my body responded to. I found meals that worked for me, became more consistent and saw which choices helped.</p>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "12px 0 0" }}>Sushi is a small example. I still eat it. Now I know how my body tends to respond afterwards.</p>
+            <div style={{ marginTop: "24px", paddingLeft: "18px", borderLeft: "2px solid rgba(240,80,140,0.3)" }}>
+              <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "26px", lineHeight: 1.25, color: TUNI_COLORS.ink }}>Knowing changes the choice.</div>
+            </div>
+            <p style={{ fontSize: "16px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "20px 0 0" }}>That process became Tuni.</p>
+            <div style={{ marginTop: "24px", paddingLeft: "18px", borderLeft: "2px solid rgba(240,80,140,0.3)" }}>
+              <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 600, fontSize: "26px", lineHeight: 1.25, color: TUNI_COLORS.ink }}>I wasn't missing effort. I was missing feedback.</div>
+            </div>
             <p style={{ fontSize: "13px", lineHeight: 1.5, color: TUNI_COLORS["muted-gray"], background: TUNI_COLORS.mat, borderRadius: "14px", padding: "14px 16px", margin: "24px 0 0", fontWeight: 600 }}>These are my personal results. Every woman's body will respond differently.</p>
           </div>
         </div>
