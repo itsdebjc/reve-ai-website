@@ -421,15 +421,15 @@ const TuniLandingPage = () => {
         <div className="bff-grid-2col" style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "60px", alignItems: "center" }}>
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
-            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span><br />Not just another plan.</h2>
-            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, habits and body changes together so you can see patterns, ask questions and understand what this means for your body.</p>
-            <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how Tuni turns that into feedback:</p>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span><br />Not another plan.</h2>
+            <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, habits and body changes together so you can spot patterns, ask questions and understand how your body responds.</p>
+            <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how:</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
-                { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it. Type it. Snap a photo.", "Capture meals and everyday choices without weighing every ingredient or turning your day into a tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
-                { num: "02", line1: "Ask", line2: "a coach that knows your data.", details: ["Ask Tuni about your day, your patterns or your progress.", "Tuni looks across your food, movement, timing and body changes to help you see what may be working and what might be getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
-                { num: "03", line1: "Scan", line2: "what's actually changing.", details: ["Add your weekly body composition scan and see what's happening beneath the number on the scale.", "Follow changes in body fat, muscle and more over time."], tag: "Beyond weight.", color: TUNI_COLORS.amber },
-                { num: "04", line1: "Snap", line2: "food in front of you.", details: ["Restaurant menu. Packaged food. Nutrition label. Something you're thinking about eating.", "Take a photo and ask Tuni to help you make sense of it based on what you're working on."], tag: "Real-life food help.", color: TUNI_COLORS.green },
+                { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it. Type it. Snap a photo.", "Capture meals and everyday choices without weighing ingredients or turning tracking into a project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
+                { num: "02", line1: "Ask", line2: "a coach who knows your data.", details: ["Ask Tuni about your day, patterns or progress.", "Tuni looks across your food, movement, timing and body changes to show what may be working and what might be getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
+                { num: "03", line1: "Scan", line2: "what's actually changing.", details: ["Add a weekly body composition scan to see what's happening beyond the number on the scale.", "Follow your body fat, muscle and more over time."], tag: "Beyond weight.", color: TUNI_COLORS.amber },
+                { num: "04", line1: "Snap", line2: "the food in front of you.", details: ["Restaurant menu. Packaged food. Nutrition label. Something you're considering eating.", "Take a photo and ask Tuni to make sense of it based on what you're working on."], tag: "Real-life food help.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
@@ -445,9 +445,9 @@ const TuniLandingPage = () => {
               ))}
             </div>
             <div style={{ marginTop: "32px", paddingTop: "24px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
-              <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "12px" }}>Your body is already giving you feedback. Tuni helps you make sense of it.</div>
+              <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "22px", color: TUNI_COLORS.ink, marginBottom: "12px" }}>Your body is already giving you feedback. Tuni helps you understand it.</div>
               <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0 0 12px" }}>No calorie counting. No perfect days. No generic plan.</p>
-              <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0" }}>Just your real life, your own data and a clearer idea of what may be working, what might be getting in the way and what you want to try next.</p>
+              <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], margin: "0" }}>Just your real life, your own data and a clearer view of what may be working, what might be getting in the way and what to try next.</p>
             </div>
           </div>
           {/* iPhone mockups with app screens, fanned */}
