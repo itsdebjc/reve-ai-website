@@ -424,23 +424,23 @@ const TuniLandingPage = () => {
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span><br />Not another plan.</h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, habits and body changes together so you can spot patterns, ask questions and understand how your body responds.</p>
             <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how:</p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "36px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "24px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
-                { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it. Type it. Snap a photo.", "Capture meals and everyday choices without weighing ingredients or turning tracking into a project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
-                { num: "02", line1: "Ask", line2: "a coach who knows your data.", details: ["Ask Tuni about your day, patterns or progress.", "Tuni looks across your food, movement, timing and body changes to show what may be working and what might be getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
-                { num: "03", line1: "Scan", line2: "what's actually changing.", details: ["Add a weekly body composition scan to see what's happening beyond the number on the scale.", "Follow your body fat, muscle and more over time."], tag: "Beyond weight.", color: TUNI_COLORS.amber },
-                { num: "04", line1: "Snap", line2: "the food in front of you.", details: ["Restaurant menu. Packaged food. Nutrition label. Something you're considering eating.", "Take a photo and ask Tuni to make sense of it based on what you're working on."], tag: "Real-life food help.", color: TUNI_COLORS.green },
+                { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it, type it or snap a photo — no weighing, no tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
+                { num: "02", line1: "Ask", line2: "a coach who knows your data.", details: ["Ask about your day, patterns or progress, and Tuni shows what's working and what's getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
+                { num: "03", line1: "Scan", line2: "what's actually changing.", details: ["A weekly body composition scan shows what's changing beyond the number on the scale."], tag: "Beyond weight.", color: TUNI_COLORS.amber },
+                { num: "04", line1: "Snap", line2: "the food in front of you.", details: ["Menu, package or label — snap a photo and Tuni makes sense of it for what you're working on."], tag: "Real-life food help.", color: TUNI_COLORS.green },
               ].map((item, i) => (
                 <div key={item.line1}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "14px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
                     <span style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "15px", color: item.color, letterSpacing: "0.02em" }}>{item.num}</span>
                     <span style={{ flex: 1, height: "1px", background: "rgba(42,33,28,0.15)", maxWidth: "56px" }} />
                   </div>
-                  <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(24px, 3vw, 32px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: item.color }}>{item.line2}</span></h3>
+                  <h3 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(22px, 2.8vw, 28px)", lineHeight: 1.08, letterSpacing: "-0.02em", margin: "0" }}>{item.line1}<br /><span style={{ color: item.color }}>{item.line2}</span></h3>
                   {item.details.map((d, di) => (
-                    <p key={di} style={{ fontSize: "16px", lineHeight: 1.55, color: TUNI_COLORS["body-text"], maxWidth: "460px", margin: di === 0 ? "14px 0 0" : "8px 0 0" }}>{d}</p>
+                    <p key={di} style={{ fontSize: "15.5px", lineHeight: 1.5, color: TUNI_COLORS["body-text"], maxWidth: "460px", margin: "10px 0 0" }}>{d}</p>
                   ))}
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: `${item.color}15`, color: item.color, fontSize: "14px", fontWeight: 700, padding: "8px 16px", borderRadius: "999px", marginTop: "14px" }}>✓ {item.tag}</span>
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: `${item.color}15`, color: item.color, fontSize: "13.5px", fontWeight: 700, padding: "7px 14px", borderRadius: "999px", marginTop: "12px" }}>✓ {item.tag}</span>
                 </div>
               ))}
             </div>
