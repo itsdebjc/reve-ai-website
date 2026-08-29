@@ -424,7 +424,7 @@ const TuniLandingPage = () => {
             <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span><br />Not another plan.</h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, habits and body changes together so you can spot patterns, ask questions and understand how your body responds.</p>
             <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how:</p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "24px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
+            <div className="bff-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px 28px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
               {[
                 { num: "01", line1: "Log", line2: "your day, your way.", details: ["Talk it, type it or snap a photo — no weighing, no tracking project."], tag: "No calorie counting.", color: TUNI_COLORS.coral },
                 { num: "02", line1: "Ask", line2: "a coach who knows your data.", details: ["Ask about your day, patterns or progress, and Tuni shows what's working and what's getting in the way."], tag: "Feedback based on you.", color: TUNI_COLORS.pink },
