@@ -414,7 +414,7 @@ const TuniLandingPage = () => {
         <div className="bff-grid-2col" style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "60px", alignItems: "center" }}>
           <div>
             <span style={{ display: "inline-flex", alignItems: "center", background: "#FFF1EB", color: TUNI_COLORS.coral, fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", padding: "7px 14px", borderRadius: "999px" }}>See how Tuni works</span>
-            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you feedback.</span><br />Not another plan.</h2>
+            <h2 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 3.8vw, 42px)", lineHeight: 1.1, letterSpacing: "-0.02em", margin: "22px 0 0" }}><span style={{ color: TUNI_COLORS.pink }}>Tuni gives you personalised feedback.</span> Not another plan.</h2>
             <p style={{ fontSize: "17px", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "720px", margin: "20px 0 0" }}>Tuni brings your food, habits and body changes together so you can spot patterns, ask questions and understand how your body responds to the choices you make.</p>
             <p style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.02em", color: TUNI_COLORS.ink, margin: "18px 0 0" }}>Here's how:</p>
             <div className="bff-grid-2col" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px 28px", margin: "22px 0 28px", paddingTop: "28px", borderTop: "1px solid rgba(42,33,28,0.1)" }}>
