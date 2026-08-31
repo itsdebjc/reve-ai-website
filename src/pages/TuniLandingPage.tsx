@@ -296,7 +296,7 @@ const TuniLandingPage = () => {
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>But the things that used to work don't seem to work the same way anymore.</p>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>And you're left wondering:</p>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, maxWidth: "520px", margin: "6px 0 0" }}>What is actually making a difference?</p>
-            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni connects what you eat, how you move and what's changing in your body, so you can stop guessing and start learning what works for you.</p>
+            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni connects what you eat, how you move and what's changing in your body — giving you personalised feedback so you can stop guessing and start learning what works for you.</p>
 
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", marginTop: "26px" }}>
               {/* TODO(dev): primary CTA — currently scrolls to the shared signup form (#bff-waitlist). Swap onClick/href once a direct app-start destination exists. */}
