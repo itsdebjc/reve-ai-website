@@ -742,10 +742,8 @@ const TuniLandingPage = () => {
               <a href="mailto:hi@itstuni.com" style={{ color: "rgba(255,247,241,0.5)", textDecoration: "none" }}>hi@itstuni.com</a>
             </p>
           </div>
-          <div style={{ marginTop: "22px", paddingTop: "22px", borderTop: "1px solid rgba(255,247,241,0.1)", display: "flex", flexDirection: "column", gap: "6px" }}>
-            <p style={{ fontSize: "12px", lineHeight: 1.6, color: "rgba(255,247,241,0.45)", margin: 0 }}>For general wellness and education only. Not medical advice, diagnosis or treatment. Personal results shared are not a promise of your results.</p>
-            <p style={{ fontSize: "12px", lineHeight: 1.6, color: "rgba(255,247,241,0.45)", margin: 0 }}>Tuni membership renews monthly at the then-current price. Cancel anytime — see our <a href="https://itstuni.com/terms" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,247,241,0.6)", textDecoration: "underline" }}>cancellation policy</a>.</p>
-            <p style={{ fontSize: "11px", color: "rgba(255,247,241,0.32)", margin: "6px 0 0" }}>© 2026 Tuni. Tuni is operated by 1236097 BC Ltd.</p>
+          <div style={{ marginTop: "22px", paddingTop: "22px", borderTop: "1px solid rgba(255,247,241,0.1)" }}>
+            <p style={{ fontSize: "11.5px", lineHeight: 1.7, color: "rgba(255,247,241,0.4)", margin: 0 }}>For general wellness and education only, not medical advice. $15/month membership, cancel anytime — see our <a href="https://itstuni.com/terms" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,247,241,0.55)", textDecoration: "underline" }}>cancellation policy</a>. © 2026 Tuni, operated by 1236097 BC Ltd.</p>
           </div>
         </div>
       </footer>
