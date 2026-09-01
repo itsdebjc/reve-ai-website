@@ -292,11 +292,11 @@ const TuniLandingPage = () => {
             </div>
             <h1 style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 800, fontSize: "clamp(44px, 6vw, 76px)", lineHeight: 0.98, letterSpacing: "-0.035em", margin: 0, color: TUNI_COLORS.ink }}>Your body changed.</h1>
             <div style={{ fontFamily: "'Caveat', cursive", fontWeight: 700, fontSize: "clamp(32px, 4.4vw, 48px)", lineHeight: 1, color: TUNI_COLORS.pink, marginTop: "6px" }}>Tuni helps you figure out what works for your body now.</div>
-            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "22px 0 0" }}>You eat pretty well. You move. You try to make good choices.</p>
+            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "22px 0 0" }}>You hit your 40s or 50s, and suddenly the things that used to work don't. You eat pretty well. You move. You try to make good choices.</p>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>But the things that used to work don't seem to work the same way anymore.</p>
             <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "12px 0 0" }}>And you're left wondering:</p>
-            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, maxWidth: "520px", margin: "6px 0 0" }}>What is actually making a difference?</p>
-            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni connects what you eat, how you move and what's changing in your body — giving you personalised feedback so you can stop guessing and start learning what works for you.</p>
+            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS.ink, fontWeight: 700, maxWidth: "520px", margin: "6px 0 0" }}>What is actually working for me now?</p>
+            <p style={{ fontSize: "clamp(16px, 1.5vw, 19px)", lineHeight: 1.6, color: TUNI_COLORS["body-text"], maxWidth: "520px", margin: "20px 0 0" }}>Tuni connects your choices with your body changes, giving you feedback so you can learn what works for you.</p>
 
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", marginTop: "26px" }}>
               {/* TODO(dev): primary CTA — currently scrolls to the shared signup form (#bff-waitlist). Swap onClick/href once a direct app-start destination exists. */}
@@ -689,7 +689,7 @@ const TuniLandingPage = () => {
               { q: "Do I need a body composition scale?", a: (
                 <>
                   <p style={{ margin: 0 }}>No. You can start using Tuni without one and learn from your food, movement and daily patterns.</p>
-                  <p style={{ margin: "10px 0 0" }}>But if you want Tuni to connect those habits with changes in body fat, muscle and body composition, a scale helps. For the most in-depth data, I recommend the <a href="https://link.amazon/B0bdC4sOT" target="_blank" rel="noopener noreferrer" style={{ color: TUNI_COLORS.coral, textDecoration: "underline" }}>RENPHO 50+ metrics scale</a> (~$200). If you'd rather start smaller, there's also a <a href="https://link.amazon/B0d6e0DPM" target="_blank" rel="noopener noreferrer" style={{ color: TUNI_COLORS.coral, textDecoration: "underline" }}>~$49 option</a> with fewer metrics.</p>
+                  <p style={{ margin: "10px 0 0" }}>But if you want Tuni to connect those habits with changes in body fat, muscle and body composition, a scale helps. I recommend the <a href="https://link.amazon/B0bdC4sOT" target="_blank" rel="noopener noreferrer" style={{ color: TUNI_COLORS.coral, textDecoration: "underline" }}>RENPHO 50+ metrics scale</a>. Right now, Tuni is only compatible with RENPHO scales — other brands are coming soon.</p>
                 </>
               ) },
               { q: "Will Tuni tell me exactly what to eat?", a: "No. Tuni isn't there to give every woman the same food plan. It helps you understand your own patterns so you can make more informed choices." },
